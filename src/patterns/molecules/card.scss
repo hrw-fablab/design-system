@@ -1,0 +1,36 @@
+.fl-card {
+	aspect-ratio: var(--aspect-widescreen);
+	max-width: 1000px;
+
+	& > :not(img) {
+		padding: 0 var(--size-2);
+	}
+
+	& img {
+		width: 100%;
+		aspect-ratio: var(--aspect-widescreen);
+		object-fit: cover;
+	}
+
+	& header {
+		margin-bottom: var(--size-3);
+	}
+
+	& a {
+		text-decoration: none;
+	}
+}
+
+.fl-card:hover {
+	& a {
+		text-decoration: underline;
+	}
+}
+
+.fl-card.aspect-1 {
+	aspect-ratio: var(--aspect-box);
+}
+
+.fl-card.aspect-16 {
+	aspect-ratio: var(--aspect-widescreen);
+}

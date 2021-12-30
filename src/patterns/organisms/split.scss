@@ -1,0 +1,36 @@
+.fl-split {
+	display: grid;
+	grid-template-columns: 1fr 0.7fr;
+	gap: var(--size-fluid-5);
+	max-width: 1440px;
+	margin: 0 auto;
+
+	@media (--xl-n-below) {
+		& {
+			padding: var(--size-fluid-2);
+		}
+	}
+
+	@media (--lg-n-below) {
+		& {
+			grid-template-columns: 1fr;
+			gap: var(--size-fluid-2);
+		}
+
+		& .fl-split-media img{
+			aspect-ratio: 6/ 3;
+			object-fit: cover;
+		}
+	}
+}
+
+.fl-split-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--size-fluid-1);
+}
+
+.fl-split.centered {
+	max-width: 1024px;
+}

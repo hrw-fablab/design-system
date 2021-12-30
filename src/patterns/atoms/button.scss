@@ -1,0 +1,38 @@
+.fl-button {
+	font-size: var(--font-size-3);
+	font-weight: inherit;
+	background-color: var(--gray-9);
+	color: var(--gray-2);
+	border: solid 0.15rem transparent;
+	border-radius: var(--size-2);
+	padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
+
+	&:hover {
+		background-color: transparent;
+		border-color: var(--gray-9);
+		color: var(--gray-9);
+	}
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--gray-9);
+		color: var(--gray-9);
+
+		&:hover {
+			background-color: var(--gray-3);
+		}
+	}
+}
+
+
+.fl-button.small {
+	font-size: var(--font-size-2);
+}
+
+.fl-button.medium {
+	font-size: var(--font-size-3);
+}
+
+.fl-button.large {
+	font-size: var(--font-size-4);
+}

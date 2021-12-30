@@ -1,0 +1,28 @@
+.fl-card-layout {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), max-content));
+	gap: var(--size-fluid-2);
+	max-width: 1440px;
+	margin: 0 auto;
+
+	& .featured {
+		grid-column: 1 / 3;
+	}
+
+	@media (--xl-n-below) {
+		& {
+			padding: var(--size-fluid-2);
+			margin: inherit;
+		}
+	}
+	
+	@media (--md-n-below) {
+		& .featured {
+			grid-column: inherit;
+		}
+
+		& .fl-card.aspect-1 {
+			aspect-ratio: var(--aspect-widescreen);
+		}
+	}
+}
