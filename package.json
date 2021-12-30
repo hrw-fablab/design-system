@@ -4,7 +4,7 @@
   "description": "HRW-Fablab Design System",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/index.scss -o styles.scss"
+    "build": "postcss src/index.scss -o styles.css"
   },
   "repository": {
     "type": "git",
