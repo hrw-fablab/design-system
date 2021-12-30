@@ -9,6 +9,10 @@
 		grid-column: 1 / 3;
 	}
 
+	& .long {
+		aspect-ratio: var(--aspect-box);
+	}
+
 	@media (--xl-n-below) {
 		& {
 			padding: var(--size-fluid-2);
@@ -21,7 +25,7 @@
 			grid-column: inherit;
 		}
 
-		& .fl-card.aspect-1 {
+		& .long {
 			aspect-ratio: var(--aspect-widescreen);
 		}
 	}
