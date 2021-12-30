@@ -1,5 +1,5 @@
 h1{
-	font-size: var(--font-size-7);
+	font-size: var(--font-size-8);
 	font-family: Segoe UI;
 }
 
@@ -25,12 +25,20 @@ h5{
 
 p{
 	font-size: var(--font-size-3);
+	font-family: Helvetica;
 }
 
 a{
 	font-size: var(--font-size-3);
+	font-family: Helvetica;
 }
 
 time{
 	font-size: var(--font-size-3);
+	font-family: Helvetica;
+}
+
+button{
+	font-size: var(--font-size-3);
+	font-family: Helvetica;
 }

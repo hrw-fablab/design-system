@@ -1,0 +1,9 @@
+.fl-main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-fluid-4);
+}
+
+.fl-main.index {
+	padding-top: var(--size-fluid-4);
+}
