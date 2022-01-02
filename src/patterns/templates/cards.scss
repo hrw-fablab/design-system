@@ -16,13 +16,6 @@
 		aspect-ratio: var(--aspect-box);
 	}
 
-	@media (--xl-n-below) {
-		& {
-			padding: var(--size-fluid-2);
-			margin: inherit;
-		}
-	}
-	
 	@media (--md-n-below) {
 		& .featured {
 			grid-column: inherit;
