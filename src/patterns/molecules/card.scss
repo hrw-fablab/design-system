@@ -2,7 +2,7 @@
 	aspect-ratio: var(--aspect-widescreen);
 	max-width: 1000px;
 
-	& > :not(img) {
+	& > :not(picture, img) {
 		padding: 0 var(--size-2);
 	}
 

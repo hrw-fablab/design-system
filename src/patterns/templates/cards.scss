@@ -2,8 +2,11 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), max-content));
 	gap: var(--size-fluid-2);
-	max-width: 1440px;
-	margin: 0 auto;
+	justify-content: space-between;
+
+	& > * {
+		justify-self: center;
+	}
 
 	& .featured {
 		grid-column: 1 / 3;

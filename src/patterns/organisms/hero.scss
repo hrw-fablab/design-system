@@ -11,13 +11,13 @@
 	align-items: center;
 }
 
-.fl-hero video {
+.fl-hero-media {
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 }
 
-.fl-hero img {
+.fl-hero-media > * {
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
