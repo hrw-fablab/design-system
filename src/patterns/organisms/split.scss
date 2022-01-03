@@ -21,6 +21,7 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: var(--size-fluid-1);
+	min-width: 0;
 }
 
 .fl-split.centered {
