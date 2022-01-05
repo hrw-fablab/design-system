@@ -1,0 +1,14 @@
+.fl-blockquote {
+	& p {
+		quotes: "“" "“" "“" "“";
+		font-size: var(--font-size-4);
+	}
+
+	& p::before {
+		content: open-quote;
+	}
+
+	& p::after {
+		content: close-quote;
+	}
+}

@@ -1,7 +1,7 @@
 .fl-cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), max-content));
-	gap: var(--size-fluid-2);
+	gap: var(--size-fluid-3);
 	justify-content: space-between;
 
 	& > * {
