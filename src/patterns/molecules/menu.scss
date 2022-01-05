@@ -2,16 +2,24 @@
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	gap: var(--size-fluid-4);
-}
 
-.fl-menu li {
-	position: relative;
-}
+	& li {
+		position: relative;
+	}
 
-.fl-menu a {
-	text-decoration: none;
-	border-bottom: solid thin transparent;
+	& a {
+		text-decoration: none;
+		border-bottom: solid thin transparent;
+	}
+
+	& button {
+		background-color: transparent;
+		border: none;
+		border-bottom: solid thin transparent;
+		font-size: var(--font-size-3);
+	}
 }
 
 .fl-menu a:hover {
@@ -20,13 +28,6 @@
 
 .fl-menu button:hover {
 	border-bottom: solid thin;
-}
-
-.fl-menu button {
-	background-color: transparent;
-	border: none;
-	border-bottom: solid thin transparent;
-	font-size: var(--font-size-3);
 }
 
 .fl-submenu.hidden {
