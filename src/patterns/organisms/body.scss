@@ -1,3 +1,9 @@
 .fl-body {
 	background-color: var(--gray-0);
+
+	& > .fl-home {
+		& > .fl-hero {
+			margin-bottom: var(--size-fluid-5);
+		}
+	}
 }

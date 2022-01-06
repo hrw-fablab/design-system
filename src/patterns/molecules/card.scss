@@ -1,12 +1,15 @@
 .fl-card {
-	aspect-ratio: var(--aspect-widescreen);
 	max-width: 1000px;
+	transition: box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: column;
 
 	& > :not(picture, img) {
 		padding: 0 var(--size-2);
 	}
 
 	& img {
+		height: 100%;
 		width: 100%;
 		aspect-ratio: var(--aspect-widescreen);
 		object-fit: cover;
@@ -16,13 +19,21 @@
 		margin-bottom: var(--size-3);
 	}
 
-	& a {
-		text-decoration: none;
+	& > a {
+		margin-top: var(--size-5);
 	}
 }
 
 .fl-card:hover {
-	& a {
-		text-decoration: underline;
+	& {
+		box-shadow: var(--shadow-2);
 	}
+}
+
+.fl-card.left {
+	text-align: left;
+}
+
+.fl-card.centered {
+	text-align: center;
 }

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hrw-fablab/design-system#readme",
   "devDependencies": {
+    "cssnano": "^5.0.14",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-custom-media": "^8.0.0",

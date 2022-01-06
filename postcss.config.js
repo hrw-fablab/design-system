@@ -3,5 +3,6 @@ module.exports = {
 		require('postcss-import'),
 		require('postcss-nesting'),
 		require('postcss-custom-media'),
+		require('cssnano')({preset: 'default',})
 	]
 }

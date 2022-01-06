@@ -1,6 +1,7 @@
 .fl-content {
 	max-width: 1440px;
 	margin: 0 auto 0 auto;
+	margin-bottom: var(--size-fluid-6);
 
 	@media (--xl-n-below) {
 		& {
