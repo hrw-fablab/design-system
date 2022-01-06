@@ -4,6 +4,8 @@
 	gap: var(--size-fluid-3);
 
 	& > .fl-card {
+		aspect-ratio: inherit;
+		display: flex;
 		max-width: inherit;
 		width: 100%;
 		flex-direction: row;

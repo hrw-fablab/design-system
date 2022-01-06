@@ -1,8 +1,7 @@
 .fl-card {
 	max-width: 1000px;
 	transition: box-shadow 0.3s ease;
-	display: flex;
-	flex-direction: column;
+	aspect-ratio: 3 / 2;
 
 	& > :not(picture, img) {
 		padding: 0 var(--size-2);
