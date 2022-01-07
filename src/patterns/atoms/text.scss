@@ -33,6 +33,10 @@ a{
 	font-family: Helvetica;
 }
 
+a:hover {
+	color: var(--blue-8);
+}
+
 time{
 	font-size: var(--font-size-3);
 	font-family: Helvetica;
@@ -41,6 +45,10 @@ time{
 button{
 	font-size: var(--font-size-3);
 	font-family: Helvetica;
+}
+
+button:hover {
+	color: var(--blue-8);
 }
 
 address {
