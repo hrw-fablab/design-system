@@ -20,14 +20,10 @@
 		border-bottom: solid thin transparent;
 		font-size: var(--font-size-3);
 	}
-}
 
-.fl-menu a:hover {
-	border-bottom: solid thin;
-}
-
-.fl-menu button:hover {
-	border-bottom: solid thin;
+	& :hover:where(button, a) {
+		border-bottom: solid thin;
+	}
 }
 
 .fl-submenu.hidden {

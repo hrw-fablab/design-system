@@ -21,11 +21,11 @@
 	& > a {
 		margin-top: var(--size-5);
 	}
-}
 
-.fl-card:hover {
-	& {
-		box-shadow: var(--shadow-2);
+	&:hover {
+		& {
+			box-shadow: var(--shadow-2);
+		}
 	}
 }
 

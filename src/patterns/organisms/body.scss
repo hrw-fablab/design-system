@@ -7,3 +7,14 @@
 		}
 	}
 }
+
+.fl-main > *:nth-child(1){
+	margin-top: 0 !important;
+}
+
+.fl-body main {
+	& .fl-accent:nth-child(2n){
+		background-color: inherit;
+		color: inherit;
+	}
+}

@@ -56,4 +56,9 @@ a {
 button {
 	width: max-content;
 }
+
+footer {
+	position: sticky;
+	top: 100vh;
+}
 /* purgecss end ignore */

@@ -6,13 +6,13 @@
 	& p {
 		quotes: "“" "“" "“" "“";
 		font-size: var(--font-size-5);
-	}
 
-	& p::before {
-		content: open-quote;
-	}
+		&::before {
+			content: open-quote;
+		}
 
-	& p::after {
-		content: close-quote;
+		&::after {
+			content: close-quote;
+		}
 	}
 }
