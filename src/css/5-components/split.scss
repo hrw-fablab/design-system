@@ -4,7 +4,7 @@
 	gap: var(--size-fluid-5);
 	transition: box-shadow 0.3s ease;
 
-	& :where(img) {
+	& img {
 		aspect-ratio: 16 / 9;
 	}
 
@@ -16,7 +16,6 @@
 
 		& .fl-split-media img{
 			aspect-ratio: 6/ 3;
-			object-fit: cover;
 		}
 	}
 }
@@ -25,10 +24,4 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: var(--size-fluid-1);
-	min-width: 0;
-}
-
-.fl-split.centered {
-	max-width: 1024px;
 }

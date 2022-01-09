@@ -1,3 +1,7 @@
+.hidden {
+	display: none !important;
+}
+
 .text-start {
 	text-align: start;
 }
@@ -15,30 +19,8 @@
 	color: var(--gray-0);
 
 	& a:hover {
-		color: var(--gray-5) !important;
+		color: var(--gray-5);
 	}
-}
-
-.fl-content {
-	max-width: 1440px;
-	margin: 0 auto 0 auto;
-
-	@media (--xl-n-below) {
-		& {
-			padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
-			margin: inherit;
-		}
-	}
-}
-
-.fl-content.medium {
-	max-width: 1024px;
-	margin: 0 auto 0 auto;
-}
-
-.fl-content.small {
-	max-width: 768px;
-	margin: 0 auto 0 auto;
 }
 
 .margin {

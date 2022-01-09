@@ -2,10 +2,9 @@
   "name": "design-system",
   "version": "1.0.0",
   "description": "HRW-Fablab Design System",
-  "main": "index.js",
   "scripts": {
-    "build": "postcss src/index.scss -o styles.css",
-    "watch": "postcss src/index.scss -o styles.css --watch"
+    "build": "postcss src/css/main.scss -o styles.css",
+    "watch": "postcss src/css/main.scss -o styles.css --watch"
   },
   "repository": {
     "type": "git",

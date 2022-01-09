@@ -1,0 +1,22 @@
+.fl-content {
+	margin: 0 auto 0 auto;
+
+	@media (--xl-n-below) {
+		& {
+			padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
+			margin: inherit;
+		}
+	}
+}
+
+.fl-content.large {
+	max-width: 1440px;
+}
+
+.fl-content.medium {
+	max-width: 1024px;
+}
+
+.fl-content.small {
+	max-width: 768px;
+}

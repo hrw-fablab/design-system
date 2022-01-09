@@ -1,0 +1,36 @@
+.fl-menu ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--size-fluid-4);
+
+	& li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& :hover:where(button, a) {
+		color: var(--blue-8);
+		text-decoration: underline;
+	}
+}
+
+.fl-menu.submenu {
+	flex-direction: column;
+	align-items: start;
+	left: 0;
+	gap: var(--size-fluid-2);
+	transform: translateY(70%);
+	position: absolute;
+	background-color: var(--gray-2);
+	padding: var(--size-fluid-1);
+	box-shadow: var(--shadow-2);
+	border-radius: var(--size-2);
+}

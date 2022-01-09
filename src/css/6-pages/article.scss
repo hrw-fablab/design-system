@@ -1,0 +1,9 @@
+.fl-article > img {
+	aspect-ratio: var(--aspect-widescreen);
+}
+
+.fl-article-header div {
+	display: flex;
+	align-items: center;
+	gap: var(--size-fluid-3);
+}

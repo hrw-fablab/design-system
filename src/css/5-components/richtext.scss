@@ -1,0 +1,16 @@
+.fl-richtext {
+	& img {
+		aspect-ratio: 3 / 2;
+		width: 100%;
+	}
+	
+	& ul {
+		padding: revert;
+	}
+
+	& iframe {
+		aspect-ratio: 3 / 2;
+		width: 100%;
+		height: 100%;
+	}
+}

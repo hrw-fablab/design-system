@@ -1,0 +1,30 @@
+.fl-hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& .fl-hero-content {
+		position: absolute;
+		color: white;
+		max-width: 1440px;
+		margin: 0 auto 0 auto;
+
+		& p {
+			font-size: var(--font-size-6);
+		}
+	}
+}
+
+.fl-hero.large {
+	height: 80vh;
+}
+
+.fl-hero.medium {
+	height: 50vh;
+}
+
+.fl-hero.small {
+	height: 30vh;
+}
