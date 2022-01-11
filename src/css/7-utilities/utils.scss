@@ -14,12 +14,18 @@
 	text-align: end;
 }
 
+.centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .fl-accent {
-	background-color: var(--blue-8);
-	color: var(--gray-0);
+	background-color: var(--brand);
+	color: var(--surface-2);
 
 	& a:hover {
-		color: var(--gray-5);
+		color: var(--text-1);
 	}
 }
 

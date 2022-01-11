@@ -17,7 +17,7 @@
 	}
 
 	& :hover:where(button, a) {
-		color: var(--blue-8);
+		color: var(--brand);
 		text-decoration: underline;
 	}
 }
@@ -29,7 +29,7 @@
 	gap: var(--size-fluid-2);
 	transform: translateY(70%);
 	position: absolute;
-	background-color: var(--gray-2);
+	background-color: var(--surface-2);
 	padding: var(--size-fluid-1);
 	box-shadow: var(--shadow-2);
 	border-radius: var(--size-2);

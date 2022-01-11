@@ -5,6 +5,10 @@
 	& > :not(picture, img) {
 		padding: 0 var(--size-2);
 	}
+
+	& header {
+		margin-bottom: var(--size-4);
+	}
 }
 
 .fl-card.featured {
@@ -21,6 +25,10 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: var(--size-fluid-3);
+
+	& img {
+		aspect-ratio: var(--aspect-widescreen);
+	}
 
 	& > div {
 		display: flex;

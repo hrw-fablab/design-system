@@ -3,4 +3,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: var(--size-2);
+
+	& svg {
+		fill: var(--brand);
+	}
 }
