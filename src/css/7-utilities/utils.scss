@@ -29,6 +29,15 @@
 	}
 }
 
+.fl-accent:nth-child(3n) {
+	background-color: inherit;
+	color: inherit;
+
+	& a:hover {
+		color: var(--brand);
+	}
+}
+
 .margin {
 	margin: var(--size-fluid-4);
 }
