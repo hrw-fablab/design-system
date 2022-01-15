@@ -1,8 +1,9 @@
 .fl-logo {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	gap: var(--size-2);
+	flex-shrink: 0;
 
 	& svg {
 		fill: var(--brand);
