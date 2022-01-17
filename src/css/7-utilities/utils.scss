@@ -16,8 +16,11 @@
 
 .centered {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 .fl-accent {
@@ -76,4 +79,17 @@
 
 .padding-right {
 	padding-right: var(--size-fluid-4);
+}
+
+.bg-color-brand {
+	background-color: var(--brand);
+}
+
+.color-brand {
+	color: var(--brand);
+	fill: var(--brand);
+}
+
+.color-text-1 {
+	color: var(--text-1);
 }
