@@ -5,6 +5,11 @@
 	gap: var(--size-2);
 	flex-shrink: 0;
 
+	& img {
+		width: auto;
+		max-height: 2rem;
+	}
+
 	& svg {
 		fill: var(--brand);
 	}
