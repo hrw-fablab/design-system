@@ -7,7 +7,7 @@
 
 	@media (--xl-n-below) {
 		& {
-			padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
+			padding: var(--size-fluid-1);
 		}
 	}
 }
@@ -17,7 +17,7 @@
 
 	@media (--md-n-below) {
 		& {
-			padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
+			padding: var(--size-fluid-1);
 		}
 	}
 }
@@ -27,7 +27,7 @@
 
 	@media (--md-n-below) {
 		& {
-			padding: 0 var(--size-fluid-1) 0 var(--size-fluid-1);
+			padding: var(--size-fluid-1);
 		}
 	}
 }
