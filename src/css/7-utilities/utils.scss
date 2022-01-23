@@ -25,19 +25,32 @@
 
 .fl-accent {
 	background-color: var(--brand);
-	color: var(--surface-2);
+	color: var(--surface-1);
 
 	& a:hover {
 		color: var(--text-1);
 	}
 }
 
-.fl-accent:nth-child(3n) {
+.fl-accent:nth-child(2n) {
 	background-color: inherit;
 	color: inherit;
 
 	& a:hover {
 		color: var(--brand);
+	}
+
+	& .fl-split-body {
+		order: 1;
+	}
+}
+
+.fl-brand {
+	background-color: var(--brand);
+	color: var(--surface-1);
+
+	& a:hover {
+		color: var(--text-1);
 	}
 }
 
