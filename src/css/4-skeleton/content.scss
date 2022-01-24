@@ -5,7 +5,7 @@
 
 .fl-content.large {
 	max-width: 1340px;
-	padding: inherit;
+	padding: 0;
 
 	@media (--xl-n-below) {
 		& {
@@ -16,7 +16,7 @@
 
 .fl-content.medium {
 	max-width: 1024px;
-	padding: inherit;
+	padding: 0;
 
 	@media (--md-n-below) {
 		& {
@@ -27,7 +27,7 @@
 
 .fl-content.small {
 	max-width: 768px;
-	padding: inherit;
+	padding: 0;
 
 	@media (--md-n-below) {
 		& {
@@ -38,7 +38,7 @@
 
 .fl-content.tiny {
 	max-width: 480px;
-	padding: inherit;
+	padding: 0;
 
 	@media (--md-n-below) {
 		& {
