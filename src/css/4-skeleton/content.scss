@@ -1,9 +1,11 @@
 .fl-content {
 	margin: 0 auto 0 auto;
+	max-width: 1720px;
 }
 
 .fl-content.large {
 	max-width: 1340px;
+	padding: inherit;
 
 	@media (--xl-n-below) {
 		& {
@@ -14,6 +16,7 @@
 
 .fl-content.medium {
 	max-width: 1024px;
+	padding: inherit;
 
 	@media (--md-n-below) {
 		& {
@@ -24,6 +27,7 @@
 
 .fl-content.small {
 	max-width: 768px;
+	padding: inherit;
 
 	@media (--md-n-below) {
 		& {
@@ -34,6 +38,7 @@
 
 .fl-content.tiny {
 	max-width: 480px;
+	padding: inherit;
 
 	@media (--md-n-below) {
 		& {
