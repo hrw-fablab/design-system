@@ -31,3 +31,13 @@
 		}
 	}
 }
+
+.fl-content.tiny {
+	max-width: 480px;
+
+	@media (--md-n-below) {
+		& {
+			padding: var(--size-fluid-1);
+		}
+	}
+}
