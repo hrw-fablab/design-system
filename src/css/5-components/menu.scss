@@ -74,6 +74,7 @@
 	padding: var(--size-fluid-1);
 	box-shadow: var(--shadow-2);
 	border-radius: var(--size-2);
+	width: max-content;
 
 	@media (--lg-n-below) {
 		& {
