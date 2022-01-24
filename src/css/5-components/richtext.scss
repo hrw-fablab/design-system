@@ -1,16 +1,20 @@
-.fl-richtext {
+.fl-paragraph {
 	& img {
-		aspect-ratio: 3 / 2;
-		width: 100%;
+		aspect-ratio: var(--aspect-landscape);
 	}
-	
+
 	& ul {
 		padding: revert;
 	}
 
-	& iframe {
+	& div {
 		aspect-ratio: 3 / 2;
 		width: 100%;
 		height: 100%;
+	}
+
+	& .richtext-image.left {
+		aspect-ratio: inherit;
+		width: inherit;
 	}
 }
