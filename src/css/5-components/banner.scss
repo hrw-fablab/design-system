@@ -3,8 +3,9 @@
   grid-template: "container";
   place-items: center center;
   text-align: center;
-  height: 60vh;
+  height: 40vh;
   max-height: 500px;
+  overflow: hidden;
 
   & .fl-banner-content {
     padding: var(--size-4);
@@ -23,6 +24,7 @@
   & img {
     grid-area: container;
     z-index: -1;
-	height: min(60vh, 500px);
+    height: min(40vh, 500px);
+    transform: scale(1.1);
   }
 }
