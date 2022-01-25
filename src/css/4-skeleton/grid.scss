@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .fl-grid {
 	display: grid;
 	gap: var(--size-fluid-3);
@@ -11,8 +12,9 @@
 .fl-grid.gallery {
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
 
-	& > * {
-		aspect-ratio: var(--aspect-landscape);
+	& *:where(picture, img) {
+		aspect-ratio: var(--aspect-widescreen);
+		object-fit: contain;
 	}
 }
 
@@ -23,3 +25,4 @@
 .fl-grid.list {
 	grid-template-columns: 1fr;
 }
+/* purgecss end ignore */
