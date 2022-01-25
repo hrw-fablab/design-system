@@ -1,0 +1,28 @@
+.fl-banner {
+  display: grid;
+  grid-template: "container";
+  place-items: center center;
+  text-align: center;
+  height: 60vh;
+  max-height: 500px;
+
+  & .fl-banner-content {
+    padding: var(--size-4);
+    grid-area: container;
+    color: var(--surface-1);
+
+    & h1 {
+      font-size: var(--font-size-7);
+    }
+
+    & p {
+      font-size: var(--font-size-5);
+    }
+  }
+
+  & img {
+    grid-area: container;
+    z-index: -1;
+	height: min(60vh, 500px);
+  }
+}
