@@ -5,23 +5,25 @@
   height: 70vh;
   overflow: hidden;
 
+  & > * {
+    grid-area: container;
+    width: 100%;
+  }
+
   & .fl-hero-content {
     padding: var(--size-4);
-    grid-area: container;
     color: var(--surface-1);
-    width: 80%;
 
     & h1 {
       padding: var(--size-2) var(--size-4);
-      display: inline-flex;
       font-size: var(--font-size-7);
       margin-bottom: var(--size-4);
     }
 
     & p {
       padding: var(--size-2) var(--size-4);
-      display: inline-flex;
       font-size: var(--font-size-5);
+      width: 60%;
     }
   }
 
@@ -38,15 +40,13 @@
     & {
       height: 50vh;
     }
-    & .fl-hero-content {
-      width: 100%;
-    }
     & h1 {
       font-size: var(--font-size-6) !important;
     }
 
     & p {
       font-size: var(--font-size-4) !important;
+      width: inherit !important;
     }
 
     & img {
