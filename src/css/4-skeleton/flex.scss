@@ -1,0 +1,8 @@
+.fl-flex {
+	display: flex;
+	gap: var(--size-fluid-3);
+}
+
+.fl-flex-row {
+	flex-direction: row;
+}

@@ -10,7 +10,8 @@
   & .fl-banner-content {
     padding: var(--size-4);
     grid-area: container;
-    color: var(--surface-1);
+    color: var(--brand);
+    background-color: var(--surface-1);
 
     & h1 {
       font-size: var(--font-size-7);
@@ -22,6 +23,7 @@
   }
 
   & img {
+    filter: blur(5px);
     grid-area: container;
     z-index: -1;
     height: min(40vh, 500px);

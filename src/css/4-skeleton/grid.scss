@@ -3,6 +3,7 @@
 	display: grid;
 	gap: var(--size-fluid-3);
 	justify-content: center;
+	place-content: end center;
 }
 
 .fl-grid.cards {
