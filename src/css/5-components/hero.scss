@@ -1,30 +1,9 @@
 .fl-hero {
   display: grid;
   grid-template: "container";
-  place-items: center start;
+  place-items: center center;
   height: 70vh;
   overflow: hidden;
-
-  & > * {
-    grid-area: container;
-    width: 100%;
-  }
-
-  & .fl-hero-content {
-    color: var(--surface-1);
-
-    & h1 {
-      padding: var(--size-2) var(--size-4);
-      font-size: var(--font-size-7);
-      margin-bottom: var(--size-4);
-    }
-
-    & p {
-      padding: var(--size-2) var(--size-4);
-      font-size: var(--font-size-5);
-      width: 60%;
-    }
-  }
 
   & img {
     grid-area: container;
@@ -50,26 +29,31 @@
 
     & img {
       height: 50vh;
-      filter: blur(2px);
     }
   }
 }
 
-.fl-hero.medium {
-  height: inherit;
-  min-height: 30vh;
-  max-height: 100vh;
-  height: 50vh;
-  place-items: center center;
-  text-align: center;
+.fl-hero-content {
+  grid-area: container;
+  color: var(--text-1);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: var(--size-fluid-1);
 
-  & .fl-hero-content {
-    width: 100%;
+  & h1 {
+    font-size: var(--font-size-7);
   }
 
-  & img {
-	min-height: 30vh;
-	max-height: 100vh;
-	height: 50vh;
+  & p {
+    font-size: var(--font-size-5);
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .fl-hero-content {
+    padding: var(--size-fluid-5);
+    color: var(--surface-1);
+    background-color: inherit !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 }
