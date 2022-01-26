@@ -12,8 +12,52 @@
 
   @media (--md-n-below) {
     & {
-      min-height: 20vh;
       height: max-content;
+    }
+  }
+}
+
+.fl-banner-content {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  grid-area: container;
+  color: var(--text-1);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: var(--size-fluid-1);
+
+  & h1 {
+    font-size: var(--font-size-7);
+  }
+
+  & p {
+    font-size: var(--font-size-5);
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    & {
+      padding: var(--size-fluid-5);
+      color: var(--surface-1);
+      background-color: inherit;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  }
+
+  @media (--md-n-below) {
+    & {
+      height: 100%;
+      width: 100%;
+      padding: var(--size-fluid-5);
+    }
+
+    & h1 {
+      font-size: var(--font-size-6);
+    }
+
+    & p {
+      font-size: var(--font-size-4);
+      width: inherit;
     }
   }
 }

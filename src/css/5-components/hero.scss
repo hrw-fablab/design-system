@@ -3,32 +3,17 @@
   grid-template: "container";
   place-items: center center;
   height: 70vh;
+  max-height: 700px;
   overflow: hidden;
 
   & img {
     grid-area: container;
     z-index: -1;
-    transform: scale(1.2);
-    height: 70vh;
-    aspect-ratio: 16 / 9;
-    object-position: center top;
   }
 
   @media (--md-n-below) {
     & {
-      height: max-content;
-    }
-
-    & h1 {
-      font-size: var(--font-size-6) !important;
-    }
-
-    & p {
-      font-size: var(--font-size-4) !important;
-      width: inherit !important;
-    }
-
-    & img {
+      min-height: 40vh;
       height: max-content;
     }
   }
@@ -39,6 +24,7 @@
   color: var(--text-1);
   background-color: rgba(255, 255, 255, 0.85);
   padding: var(--size-fluid-1);
+  display: flex;
 
   & h1 {
     font-size: var(--font-size-7);
@@ -47,14 +33,30 @@
   & p {
     font-size: var(--font-size-5);
   }
-}
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .fl-hero-content {
-    padding: var(--size-fluid-5);
-    color: var(--surface-1);
-    background-color: inherit !important;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    & {
+      padding: var(--size-fluid-5);
+      color: var(--surface-1);
+      background-color: inherit;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  }
+
+  @media (--md-n-below) {
+    & {
+      align-self: end;
+      padding: var(--size-fluid-4);
+    }
+
+    & h1 {
+      font-size: var(--font-size-6);
+    }
+
+    & p {
+      font-size: var(--font-size-4);
+      width: inherit;
+    }
   }
 }
