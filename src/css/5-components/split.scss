@@ -4,15 +4,19 @@
 	gap: var(--size-fluid-5);
 	transition: box-shadow 0.3s ease;
 
-	& img {
+	& :where(picture, img) {
 		object-fit: cover;
 		aspect-ratio: var(--aspect-widescreen);
 	}
 
 	@media (--lg-n-below) {
 		& {
-			grid-template-columns: 1fr;
-			gap: var(--size-fluid-2);
+			grid-template-columns: 1fr !important;
+			gap: 0;
+		}
+
+		& .fl-split-body{
+			order: 1;
 		}
 
 		& .fl-split-media img{
