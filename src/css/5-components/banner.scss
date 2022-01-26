@@ -4,7 +4,16 @@
   justify-content: center;
   height: 50vh;
   max-height: 500px;
+  position: relative;
+  overflow: hidden;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  @media (--md-n-below) {
+    & {
+      min-height: 20vh;
+      height: max-content;
+    }
+  }
 }
