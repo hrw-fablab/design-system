@@ -8,7 +8,7 @@
   & img {
     grid-area: container;
     z-index: -1;
-    transform: scale(1.1);
+    transform: scale(1.2);
     height: 70vh;
     aspect-ratio: 16 / 9;
     object-position: center top;
@@ -16,8 +16,9 @@
 
   @media (--md-n-below) {
     & {
-      height: 50vh;
+      height: max-content;
     }
+
     & h1 {
       font-size: var(--font-size-6) !important;
     }
@@ -28,7 +29,7 @@
     }
 
     & img {
-      height: 50vh;
+      height: max-content;
     }
   }
 }
