@@ -24,7 +24,7 @@
   grid-area: container;
   color: var(--surface-1);
   background-color: var(--brand);
-  padding: var(--size-fluid-1);
+  padding: var(--size-5);
 
   & h1 {
     font-size: var(--font-size-7);
@@ -36,7 +36,6 @@
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     & {
-      padding: var(--size-fluid-5);
       background-color: inherit;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
