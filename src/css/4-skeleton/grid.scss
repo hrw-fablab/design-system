@@ -20,7 +20,7 @@
 }
 
 .fl-grid.columns {
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
 }
 
 .fl-grid.list {
