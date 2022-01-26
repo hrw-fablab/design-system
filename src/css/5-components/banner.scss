@@ -22,8 +22,8 @@
   align-self: center;
   justify-content: center;
   grid-area: container;
-  color: var(--text-1);
-  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--surface-1);
+  background-color: var(--brand);
   padding: var(--size-fluid-1);
 
   & h1 {
@@ -37,7 +37,6 @@
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     & {
       padding: var(--size-fluid-5);
-      color: var(--surface-1);
       background-color: inherit;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);

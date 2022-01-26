@@ -52,7 +52,6 @@
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     & {
-      color: var(--surface-1);
       background-color: inherit;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
