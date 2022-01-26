@@ -4,9 +4,9 @@
 	gap: var(--size-fluid-5);
 	transition: box-shadow 0.3s ease;
 
-	& :where(img, picture) {
-		object-fit: contain;
-		aspect-ratio: var(--aspect-landscape);
+	& img {
+		object-fit: cover;
+		aspect-ratio: var(--aspect-widescreen);
 	}
 
 	@media (--lg-n-below) {
@@ -22,7 +22,7 @@
 }
 
 .fl-split-media {
-	align-self: start;
+	align-self: center;
 }
 
 .fl-split-body {
