@@ -20,13 +20,15 @@
 
 	& .richtext-image.left {
 		aspect-ratio: inherit;
+		max-width: 100%;
 		width: inherit;
 	}
 
 	& .richtext-image.centered {
 		aspect-ratio: inherit;
-		width: inherit;
 		align-self: center;
+		max-width: 100%;
+		width: inherit;
 	}
 }
 /* purgecss end ignore */
