@@ -1,4 +1,8 @@
 .fl-person {
+	& {
+		aspect-ratio: var(--aspect-landscape);
+	}
+
 	& dl > div {
 		display: flex;
 		gap: var(--size-3);
