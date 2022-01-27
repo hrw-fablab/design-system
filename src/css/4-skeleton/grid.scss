@@ -13,9 +13,9 @@
 .fl-grid.gallery {
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
 
-	& *:where(picture, img) {
+	& img {
 		aspect-ratio: var(--aspect-widescreen);
-		object-fit: contain;
+		object-fit: cover;
 	}
 }
 

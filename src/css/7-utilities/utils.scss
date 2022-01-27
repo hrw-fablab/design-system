@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .hidden {
 	display: none !important;
 }
@@ -112,3 +113,16 @@
 .color-text-1 {
 	color: var(--text-1);
 }
+
+.aspect-landscape{
+	aspect-ratio: var(--aspect-landscape);
+}
+
+.aspect-widescreen{
+	aspect-ratio: var(--aspect-widescreen);
+}
+
+.contain {
+	object-fit: contain !important;
+}
+/* purgecss end ignore */
