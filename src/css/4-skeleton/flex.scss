@@ -4,10 +4,12 @@
 
 .fl-flex.row {
 	flex-direction: row;
-	gap: var(--size-2);
+	gap: var(--size-3);
+	align-items: center;
 }
 
 .fl-flex.column {
 	flex-direction: column;
 	gap: var(--size-2);
 }
+
