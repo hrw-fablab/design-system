@@ -1,11 +1,16 @@
 .fl-person {
 	& {
 		aspect-ratio: var(--aspect-landscape);
+		padding: 0 !important;
 	}
 
-	& dl > div {
-		display: flex;
-		gap: var(--size-3);
+	& header {
 		margin-bottom: var(--size-3);
+	}
+
+	& dl {
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-3);
 	}
 }

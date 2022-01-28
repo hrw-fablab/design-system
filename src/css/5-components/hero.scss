@@ -2,16 +2,14 @@
   display: grid;
   grid-template: "container";
   place-items: center center;
-  height: 70vh;
-  max-height: 700px;
   overflow: hidden;
 
   & > * {
     grid-area: container;
   }
 
-  & img {
-    grid-area: container;
+  & :where(picture, img) {
+    max-height: 700px;
     z-index: -1;
   }
 
@@ -26,12 +24,15 @@
       width: 100%;
       height: 100%;
     }
+
+    & :where(picture, img) {
+      max-height: inherit;
+      z-index: -1;
+    }
   }
 }
 
 .fl-hero-content {
-  align-self: end;
-  position: relative;
   grid-area: container;
   background-color: var(--brand);
   color: var(--surface-1);
@@ -71,7 +72,7 @@
       width: 100%;
       height: 100%;
       justify-content: end;
-      align-items: center;
+      align-items: start;
     }
 
     & h1 {

@@ -1,4 +1,3 @@
-@import 'brand.scss';
 @import 'reset.scss';
 @import 'font.scss';
-@import 'normalize.scss';
+@import 'base.scss';

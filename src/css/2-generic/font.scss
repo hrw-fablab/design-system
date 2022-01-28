@@ -9,37 +9,25 @@ h2{
 }
 
 h3{
-	font-size: var(--font-size-5);
-	font-family: Segoe UI;
-}
-
-h4{
 	font-size: var(--font-size-4);
 	font-family: Segoe UI;
 }
 
-h5{
+h4{
 	font-size: var(--font-size-3);
 	font-family: Segoe UI;
 }
 
 p{
 	font-size: var(--font-size-3);
-	font-family: Helvetica;
 }
 
 a{
 	font-size: var(--font-size-3);
-	font-family: Helvetica;
-}
-
-a:hover {
-	color: var(--blue-8);
 }
 
 time{
 	font-size: var(--font-size-3);
-	font-family: Helvetica;
 }
 
 button{
