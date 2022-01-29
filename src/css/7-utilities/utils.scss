@@ -27,12 +27,7 @@
 		color: var(--brand);
 	}
 
-	& .fl-split {
-		grid-template-columns: 0.9fr 1fr;
-	}
-	
-
-	& .fl-split-body {
+	& .fl-split > :first-child {
 		order: 1;
 	}
 }

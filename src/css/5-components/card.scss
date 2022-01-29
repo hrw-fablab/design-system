@@ -1,12 +1,4 @@
 .fl-card {
-	& > :not(picture, img) {
-		padding: 0 var(--size-2);
-	}
-
-	& header {
-		margin-bottom: var(--size-4);
-	}
-
 	@media (--md-n-below) {
 		& {
 			grid-column: inherit !important;
