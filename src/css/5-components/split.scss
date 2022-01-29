@@ -1,37 +1,19 @@
 .fl-split {
 	display: grid;
 	grid-template-columns: 1fr 0.9fr;
-	gap: var(--size-fluid-5);
-	transition: box-shadow 0.3s ease;
-
-	& :where(picture, img) {
-		object-fit: cover;
-		aspect-ratio: var(--aspect-widescreen);
-	}
 
 	@media (--lg-n-below) {
 		& {
-			grid-template-columns: 1fr !important;
-			gap: 0;
+			grid-template-columns: 1fr;
+			gap: inherit;
 		}
 
-		& .fl-split-body{
+		& >:first-child {
 			order: 1;
 		}
 
-		& .fl-split-media img{
-			aspect-ratio: 6/ 3;
+		& img {
+			aspect-ratio: 6 / 3;
 		}
 	}
-}
-
-.fl-split-media {
-	align-self: center;
-}
-
-.fl-split-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: var(--size-fluid-1);
 }

@@ -3,25 +3,11 @@
 	display: none !important;
 }
 
-.text-start {
-	text-align: start;
-}
-
-.text-centered {
-	text-align: center;
-}
-
-.text-end {
-	text-align: end;
-}
-
 .centered {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: 100%;
 }
 
 .fl-accent {
@@ -41,12 +27,7 @@
 		color: var(--brand);
 	}
 
-	& .fl-split {
-		grid-template-columns: 0.9fr 1fr;
-	}
-	
-
-	& .fl-split-body {
+	& .fl-split > :first-child {
 		order: 1;
 	}
 }
@@ -60,69 +41,11 @@
 	}
 }
 
-.margin {
-	margin: var(--size-fluid-4) !important;
-}
-
-.margin-top {
-	margin-top: var(--size-fluid-4) !important;
-}
-
-.margin-bottom {
-	margin-bottom: var(--size-fluid-4) !important;
-}
-
-
-.margin-left {
-	margin-left: var(--size-fluid-4) !important;
-}
-
-.margin-right {
-	margin-right: var(--size-fluid-4) !important;
-}
-
-.padding {
-	padding: var(--size-fluid-4) !important;
-}
-
-.padding-top {
-	padding-top: var(--size-fluid-4) !important;
-}
-
-.padding-bottom {
-	padding-bottom: var(--size-fluid-4) !important;
-}
-
-.padding-left {
-	padding-left: var(--size-fluid-4) !important;
-}
-
-.padding-right {
-	padding-right: var(--size-fluid-4) !important;
-}
-
-.bg-color-brand {
-	background-color: var(--brand);
-}
-
-.color-brand {
-	color: var(--brand);
-	fill: var(--brand);
-}
-
-.color-text-1 {
-	color: var(--text-1);
-}
-
-.aspect-landscape{
-	aspect-ratio: var(--aspect-landscape);
-}
-
-.aspect-widescreen{
-	aspect-ratio: var(--aspect-widescreen);
-}
-
 .contain {
 	object-fit: contain !important;
+}
+
+.cover {
+	object-fit: cover;
 }
 /* purgecss end ignore */

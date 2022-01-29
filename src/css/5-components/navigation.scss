@@ -1,5 +1,4 @@
 .fl-navigation {
-	padding: var(--size-fluid-2);
 	box-shadow: var(--shadow-2);
 	background-color: var(--surface-1);
 	position: sticky;
@@ -8,5 +7,5 @@
 }
 
 .fl-language {
-	margin-left: auto;
+	margin-inline-start: auto;
 }
