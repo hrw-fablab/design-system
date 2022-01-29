@@ -1,12 +1,5 @@
 .fl-person {
 	& {
-		aspect-ratio: var(--aspect-landscape);
 		padding: 0 !important;
-	}
-
-	& dl {
-		display: flex;
-		flex-direction: column;
-		gap: var(--size-3);
 	}
 }

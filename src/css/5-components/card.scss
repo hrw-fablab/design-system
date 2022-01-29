@@ -1,6 +1,4 @@
 .fl-card {
-	aspect-ratio: var(--aspect-widescreen);
-
 	& > :not(picture, img) {
 		padding: 0 var(--size-2);
 	}
@@ -19,27 +17,4 @@
 
 .fl-card.featured {
 	grid-column: 1 / 3;
-	aspect-ratio: var(--aspect-widescreen);
-}
-
-.fl-card.long {
-	aspect-ratio: var(--aspect-box);
-}
-
-.fl-card.row {
-	aspect-ratio: inherit;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: var(--size-fluid-3);
-
-	& :where(picture, img) {
-		aspect-ratio: var(--aspect-widescreen);
-	}
-
-	& > div {
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: center;
-	}
 }

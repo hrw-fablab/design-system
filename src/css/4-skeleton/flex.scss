@@ -2,6 +2,15 @@
 	display: flex;
 }
 
+.fl-flex-row {
+	display: flex;
+}
+
+.fl-flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
 .fl-flex.row {
 	flex-direction: row;
 	gap: var(--size-3);
