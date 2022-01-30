@@ -1,66 +1,80 @@
-h1{
-	font-size: var(--font-size-6);
-	font-family: Segoe UI;
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
 }
 
-h2{
-	font-size: var(--font-size-6);
-	font-family: Segoe UI;
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
-h3{
-	font-size: var(--font-size-4);
-	font-family: Segoe UI;
+h1 {
+  font-size: var(--font-size-6);
 }
 
-
-h4{
-	font-size: var(--font-size-3);
-	font-family: Segoe UI;
+h2 {
+  font-size: var(--font-size-6);
 }
 
-p{
-	font-size: var(--font-size-3);
+h3 {
+  font-size: var(--font-size-4);
 }
 
-a{
-	font-size: var(--font-size-3);
+h4 {
+  font-size: var(--font-size-3);
 }
 
-time{
-	font-size: var(--font-size-3);
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  line-height: 1.5;
 }
 
-button{
-	font-size: var(--font-size-3);
-	font-family: Helvetica;
+p {
+  font-size: var(--font-size-3);
+}
+
+a {
+  font-size: var(--font-size-3);
+}
+
+time {
+  font-size: var(--font-size-3);
+}
+
+button {
+  font-size: var(--font-size-3);
 }
 
 button:hover {
-	color: var(--blue-8);
+  color: var(--blue-8);
 }
 
 address {
-	font-size: var(--font-size-3);
-	font-family: Helvetica;
+  font-size: var(--font-size-3);
 }
 
 li {
-	font-size: var(--font-size-3);
+  font-size: var(--font-size-3);
 }
 
 blockquote {
-	font-size: var(--font-size-4);
+  font-size: var(--font-size-4);
 }
 
 dl {
-	font-size: var(--font-size-3);
+  font-size: var(--font-size-3);
 }
 
 th {
-	font-size: var(--font-size-3);
+  font-size: var(--font-size-3);
 }
 
 td {
-	font-size: var(--font-size-3);
+  font-size: var(--font-size-3);
 }

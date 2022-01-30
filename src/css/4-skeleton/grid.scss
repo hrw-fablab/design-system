@@ -8,7 +8,7 @@
 }
 
 .fl-grid.gallery {
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 
 	& img {
 		aspect-ratio: var(--aspect-widescreen);

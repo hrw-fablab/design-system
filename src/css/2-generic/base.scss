@@ -1,7 +1,10 @@
 body {
 	background-color: var(--surface-1);
 	color: var(--text-1);
-	font-family: Helvetica;
+}
+
+a {
+	text-decoration-thickness: 0.1em;
 }
 
 a:hover {

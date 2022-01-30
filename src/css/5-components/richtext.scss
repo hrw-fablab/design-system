@@ -1,8 +1,12 @@
 /* purgecss start ignore */
-.fl-paragraph {
+.fl-richtext {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+
+	& p {
+		text-align: justify;
+	}
 
 	& img {
 		aspect-ratio: var(--aspect-landscape);
