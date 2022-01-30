@@ -4,6 +4,7 @@
 
 	& a {
 		text-decoration: none;
+		text-decoration-thickness: .1em;
 	}
 
 	& :hover:where(button, a) {
