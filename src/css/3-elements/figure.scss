@@ -1,0 +1,15 @@
+figure {
+    position: relative;
+    display: grid;
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 0;
+    bottom: 0;
+    padding-inline: 1rem;
+    z-index: 10;
+}
