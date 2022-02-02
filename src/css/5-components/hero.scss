@@ -8,7 +8,7 @@
   }
 
   & :where(picture, img, figure) {
-    height: 100%;
+    height: 700px;
   }
 
   & .fl-content {
@@ -16,6 +16,10 @@
   }
 
   @media (--md-n-below) {
+    & :where(picture, img, figure) {
+      height: 100%;
+    }
+
     & .fl-content {
         width: inherit;
     }

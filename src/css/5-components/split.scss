@@ -8,12 +8,16 @@
 			gap: inherit;
 		}
 
+		& :not(picture, img, figure) {
+			padding: var(--size-2);
+		}
+
 		& >:first-child {
 			order: 1;
 		}
 
 		& img {
-			aspect-ratio: 6 / 3;
+			aspect-ratio: var(--aspect-widescreen);
 		}
 	}
 }
