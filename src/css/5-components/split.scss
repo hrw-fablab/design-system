@@ -8,10 +8,6 @@
 			gap: inherit;
 		}
 
-		& :not(picture, img, figure) {
-			padding: var(--size-2);
-		}
-
 		& >:first-child {
 			order: 1;
 		}
