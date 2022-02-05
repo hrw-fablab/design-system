@@ -9,7 +9,8 @@
 	}
 
 	& img {
-		aspect-ratio: var(--aspect-landscape);
+		margin-block: var(--size-4);
+		aspect-ratio: var(--aspect-widescreen);
 	}
 
 	& ul {

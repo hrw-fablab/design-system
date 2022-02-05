@@ -15,7 +15,7 @@
   color: var(--surface-1);
 
   & a:hover {
-    color: var(--surface-2);
+    color: var(--surface-2) !important;
   }
 }
 
@@ -24,7 +24,7 @@
   color: inherit;
 
   & a:hover {
-    color: var(--brand);
+    color: var(--brand) !important;
   }
 
   & .fl-split {
@@ -41,7 +41,7 @@
   color: var(--surface-1);
 
   & a:hover {
-    color: var(--surface-2);
+    color: var(--surface-2) !important;
   }
 }
 
