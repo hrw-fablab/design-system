@@ -1,24 +1,26 @@
 .fl-banner {
-  height: 50vh;
-  max-height: 500px;
-  overflow: hidden;
-  background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  display: grid;
+  grid-template: "container";
+  place-items: center center;
 
-  @media (--md-n-below) {
-    & {
-      height: max-content;
-    }
+  & > * {
+    grid-area: container;
   }
-}
 
-.fl-banner > :first-child {
+  & :where(picture, img, figure) {
+    height: 500px;
+  }
+
+  & > :first-child {
+    z-index: 1;
+  }
+
   @media (--md-n-below) {
     & {
+      place-items: inherit;
+    }
+    & :where(picture, img, figure) {
       height: 100%;
-      width: 100%;
-      text-align: center;
     }
   }
 }
