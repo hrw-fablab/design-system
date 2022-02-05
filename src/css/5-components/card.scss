@@ -1,11 +1,13 @@
 .fl-card {
 	@media (--md-n-below) {
 		& {
+			display: inline-block;
 			grid-column: inherit !important;
-			aspect-ratio: var(--aspect-widescreen) !important;
+			aspect-ratio: var(--aspect-widescreen);
+			grid-template-columns: inherit;
 		}
 
-		& img {
+		& img { 
 			aspect-ratio: var(--aspect-widescreen) !important;
 		}
 	}
@@ -21,5 +23,18 @@
 	}
 	& img {
 		aspect-ratio: var(--aspect-box);
+	}
+
+	@media (--md-n-below) {
+		& {
+			aspect-ratio: var(--aspect-widescreen);
+		}
+	}
+}
+
+.fl-person {
+	& img {
+		height: auto;
+		aspect-ratio: var(--aspect-box) !important;
 	}
 }

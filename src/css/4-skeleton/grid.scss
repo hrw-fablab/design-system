@@ -1,26 +1,29 @@
 /* purgecss start ignore */
-.fl-grid {
+.fl-grid-extrem {
 	display: grid;
-}
+	grid-template-columns: 1fr;
 
-.fl-grid.cards {
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
-}
-
-.fl-grid.gallery {
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
-
-	& img {
-		aspect-ratio: var(--aspect-widescreen);
-		object-fit: cover;
+	& > * {
+		aspect-ratio: inherit;
+		display: grid;
+		grid-template-columns: .5fr 1fr;
+		gap: var(--size-fluid-3);
+		place-items: center start;
 	}
 }
 
-.fl-grid.columns {
+.fl-grid-large {
+	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
 }
 
-.fl-grid.list {
-	grid-template-columns: 1fr;
+.fl-grid-medium {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+}
+
+.fl-grid-small {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 }
 /* purgecss end ignore */
