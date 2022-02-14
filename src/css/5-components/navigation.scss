@@ -1,11 +1,71 @@
 .fl-navigation {
-	box-shadow: var(--shadow-2);
-	background-color: var(--surface-1);
-	position: sticky;
-	top: 0;
-	z-index: 10;
+  box-shadow: var(--shadow-2);
+  background-color: var(--surface-1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  & a {
+    text-decoration: none;
+    text-decoration-thickness: 0.1em;
+  }
+
+  & :hover:where(button, a) {
+    color: var(--brand);
+    text-decoration: underline;
+    fill: var(--brand);
+  }
+
+  & > div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  & nav {
+    flex: 2 1 55rem;
+  }
+
+  & #menu-button {
+    display: none;
+  }
+
+  @media (--lg-n-below) {
+    & #menu-button {
+      display: flex;
+    }
+
+    & .fl-logo {
+      flex: 2;
+    }
+
+    & nav {
+      display: none;
+    }
+  }
 }
 
-.fl-language {
-	margin-inline-start: auto;
+.fl-settings {
+  justify-content: end;
+  align-items: center;
+  gap: var(--size-4);
+  flex: 1 0 15rem;
+  display: flex;
+
+  & form {
+    flex: 1;
+  }
+
+  & a {
+    flex: 0;
+  }
+
+  @media (--lg-n-below) {
+    & {
+      margin-block: var(--size-4);
+      display: none;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 input {
   padding: var(--size-2);
   border: solid 0.1em var(--brand);
-  width: 10rem;
+  width: 100%;
+  padding-inline: var(--size-3);
 }

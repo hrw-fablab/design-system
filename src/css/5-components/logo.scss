@@ -1,17 +1,18 @@
 .fl-logo {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	gap: var(--size-2);
-	flex-shrink: 0;
-	font-size: var(--font-size-4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--size-2);
+  flex-shrink: 0;
+  font-size: var(--font-size-4);
+  margin-inline-end: 2rem;
 
-	& img {
-		width: auto;
-		max-height: var(--size-fluid-2);
-	}
+  & img {
+    width: auto;
+    max-height: var(--size-fluid-2);
+  }
 
-	& svg {
-		fill: var(--brand);
-	}
+  & svg {
+    fill: var(--brand);
+  }
 }
