@@ -1,12 +1,13 @@
 body {
-	background-color: var(--surface-1);
-	color: var(--text-1);
+  background-color: var(--surface-1);
+  color: var(--text-1);
+  background-size: 20%;
 }
 
 a {
-	text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.1em;
 }
 
 a:hover {
-	color: var(--brand);
+  color: var(--brand);
 }
