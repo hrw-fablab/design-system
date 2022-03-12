@@ -1,40 +1,21 @@
 .fl-card {
-	@media (--md-n-below) {
-		& {
-			display: inline-block;
-			grid-column: inherit !important;
-			aspect-ratio: var(--aspect-widescreen);
-			grid-template-columns: inherit;
-		}
+  @media (--md-n-below) {
+    & {
+      display: inline-block;
+      grid-column: inherit !important;
+      aspect-ratio: var(--aspect-widescreen) !important;
+      grid-template-columns: inherit;
+    }
 
-		& img { 
-			aspect-ratio: var(--aspect-widescreen) !important;
-		}
-	}
-}
-
-.fl-card.featured {
-	grid-column: 1 / 3;
-}
-
-.fl-card.long {
-	& {
-		aspect-ratio: var(--aspect-box);
-	}
-	& img {
-		aspect-ratio: var(--aspect-box);
-	}
-
-	@media (--md-n-below) {
-		& {
-			aspect-ratio: var(--aspect-widescreen);
-		}
-	}
+    & img {
+      aspect-ratio: var(--aspect-widescreen) !important;
+    }
+  }
 }
 
 .fl-person {
-	& img {
-		height: auto;
-		aspect-ratio: var(--aspect-box) !important;
-	}
+  & img {
+    height: auto;
+    aspect-ratio: var(--aspect-box) !important;
+  }
 }
