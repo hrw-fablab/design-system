@@ -10,9 +10,11 @@
 
 	& p::before {
 		content: open-quote;
+		color: var(--brand);
 	}
 
 	& p::after {
 		content: close-quote;
+		color: var(--brand);
 	}
 }

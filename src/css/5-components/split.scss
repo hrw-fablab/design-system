@@ -1,19 +1,27 @@
 .fl-split {
-	display: grid;
-	grid-template-columns: 1fr .9fr;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
 
-	@media (--lg-n-below) {
-		& {
-			grid-template-columns: 1fr !important;
-			gap: var(--size-4);
-		}
+  @media (--lg-n-below) {
+    & {
+      grid-template-columns: 1fr !important;
+      gap: var(--size-4);
+    }
 
-		& >:first-child {
-			order: 0 !important; 
-		}
+    & > :first-child {
+      order: 0 !important;
+    }
 
-		& img {
-			aspect-ratio: var(--aspect-widescreen) !important;
-		}
-	}
+    & img {
+      aspect-ratio: var(--aspect-widescreen) !important;
+    }
+  }
+}
+
+div:nth-child(odd) .fl-split {
+  grid-template-columns: 0.9fr 1fr;
+
+  & > :first-child {
+    order: 1;
+  }
 }

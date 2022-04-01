@@ -3,6 +3,10 @@
   grid-template: "container";
   place-items: center center;
 
+  & h2 {
+    font-size: var(--font-size-7);
+  }
+
   & > * {
     grid-area: container;
   }
@@ -15,12 +19,24 @@
     z-index: 1;
   }
 
+  & .fl-background {
+    height: 500px;
+    width: 100%;
+    background-color: var(--brand);
+  }
+
   @media (--md-n-below) {
     & {
       place-items: inherit;
     }
-    & :where(picture, img, figure) {
+    & .fl-content {
+      width: 100%;
+    }
+    & :where(picture, img, figure, .fl-background) {
       height: 100%;
+    }
+    & h2 {
+      font-size: var(--font-size-6);
     }
   }
 }

@@ -19,32 +19,6 @@
   }
 }
 
-.fl-accent:nth-child(odd) {
-  background-color: inherit;
-  color: inherit;
-
-  & a:hover {
-    color: var(--brand) !important;
-  }
-
-  & .fl-split {
-    grid-template-columns: 0.9fr 1fr;
-  }
-
-  & .fl-split > :first-child {
-    order: 1;
-  }
-}
-
-.fl-brand {
-  background-color: var(--brand);
-  color: var(--surface-1);
-
-  & a:hover {
-    color: var(--surface-2) !important;
-  }
-}
-
 .fl-glass {
   background-color: var(--brand);
   color: var(--surface-1);
