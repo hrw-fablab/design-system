@@ -4,7 +4,7 @@
   "description": "HRW-Fablab Design System",
   "scripts": {
     "build": "postcss src/css/main.scss -o styles.css",
-    "watch": "postcss src/css/main.scss -o ../cms/static_source/css/styles.css --watch"
+    "watch": "postcss src/css/main.scss -o ../cms/design/css/styles.css --watch"
   },
   "repository": {
     "type": "git",

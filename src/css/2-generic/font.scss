@@ -32,8 +32,7 @@ h4 {
   font-size: var(--font-size-3);
 }
 
-body :where(input, button, textarea) {
+body :where(input, button, textarea, select) {
   font-size: var(--font-size-3);
   font-family: "Inter var", sans-serif;
-  line-height: 1.7;
 }

@@ -25,7 +25,7 @@
   }
 
   & nav {
-    flex: 2 1 55rem;
+    flex: 2 1 40rem;
   }
 
   & #menu-button {
@@ -37,34 +37,20 @@
       display: flex;
     }
 
+    & form {
+      width: 100%;
+      display: none;
+
+      & input {
+        width: 100%;
+      }
+    }
+
     & .fl-logo {
       flex: 2;
     }
 
     & nav {
-      display: none;
-    }
-  }
-}
-
-.fl-settings {
-  justify-content: end;
-  align-items: center;
-  gap: var(--size-4);
-  flex: 1 0 15rem;
-  display: flex;
-
-  & form {
-    flex: 1;
-  }
-
-  & a {
-    flex: 0;
-  }
-
-  @media (--lg-n-below) {
-    & {
-      margin-block: var(--size-4);
       display: none;
     }
   }

@@ -5,6 +5,7 @@
 
   & h2 {
     font-size: var(--font-size-7);
+    color: var(--surface-1);
   }
 
   & > * {
@@ -19,10 +20,16 @@
     z-index: 1;
   }
 
-  & .fl-background {
+  & :where(.fl-background, .fl-illustration) {
     height: 500px;
     width: 100%;
     background-color: var(--brand);
+  }
+
+  & .fl-illustration {
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   @media (--md-n-below) {
