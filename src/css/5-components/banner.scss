@@ -2,6 +2,7 @@
   display: grid;
   grid-template: "container";
   place-items: center center;
+  color: white;
 
   & h2 {
     font-size: var(--font-size-7);
