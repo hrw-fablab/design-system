@@ -5,7 +5,6 @@
 
   & h2 {
     font-size: var(--font-size-7);
-    color: var(--surface-1);
   }
 
   & > * {
@@ -20,10 +19,9 @@
     z-index: 1;
   }
 
-  & :where(.fl-background, .fl-illustration) {
+  & .fl-color {
     height: 500px;
     width: 100%;
-    background-color: var(--brand);
   }
 
   & .fl-illustration {
@@ -36,12 +34,19 @@
     & {
       place-items: inherit;
     }
+
     & .fl-content {
       width: 100%;
     }
-    & :where(picture, img, figure, .fl-background) {
+
+    & :where(picture, img, figure) {
       height: 100%;
     }
+
+    & .fl-color {
+      height: 300px;
+    }
+
     & h2 {
       font-size: var(--font-size-6);
     }

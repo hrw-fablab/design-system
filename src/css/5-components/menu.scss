@@ -21,7 +21,6 @@
 
     & li {
       padding-block: var(--size-3);
-      border-bottom: solid thin #ddd;
     }
 
     & li > a {
@@ -31,6 +30,14 @@
     & li button {
       display: flex;
       justify-content: space-between;
+    }
+  }
+}
+
+.underline {
+  @media (--lg-n-below) {
+    & li {
+      border-bottom: solid thin #ddd;
     }
   }
 }

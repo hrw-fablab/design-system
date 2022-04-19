@@ -19,6 +19,15 @@
   }
 }
 
+.fl-color {
+  background-color: var(--brand);
+  color: var(--surface-1);
+
+  & :where(button, select) {
+    color: var(--surface-1);
+  }
+}
+
 .fl-glass {
   background-color: var(--brand);
   color: var(--surface-1);
