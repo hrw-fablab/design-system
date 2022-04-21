@@ -1,21 +1,22 @@
 .fl-content {
-	--width: 85vw;
-	width: min(var(--width), 100rem);
-	margin-inline: auto;
+  --mobile: 85vw;
+  --desktop: 100rem;
+  width: min(var(--mobile), var(--desktop));
+  margin-inline: auto;
 }
 
-.fl-content.large {
-	width: min(var(--width), 90rem);
+.fl-content[data-width="large"] {
+  --desktop: 90rem;
 }
 
-.fl-content.medium {
-	width: min(var(--width), 60rem);
+.fl-content[data-width="medium"] {
+  --desktop: 60rem;
 }
 
-.fl-content.small {
-	width: min(var(--width), 50rem);
+.fl-content[data-width="small"] {
+  --desktop: 50rem;
 }
 
-.fl-content.tiny {
-	width: min(var(--width), 30rem);
+.fl-content[data-width="tiny"] {
+  --desktop: 30rem;
 }

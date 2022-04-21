@@ -13,9 +13,13 @@
   }
 }
 
-.fl-person {
+.fl-card[data-type="person"] {
+  text-align: center;
+
   & img {
+    width: 50%;
     height: auto;
     aspect-ratio: var(--aspect-box) !important;
+    border-radius: 50%;
   }
 }

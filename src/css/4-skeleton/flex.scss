@@ -1,20 +1,19 @@
-.fl-flex-row {
-	display: flex;
+.fl-flex {
+  display: flex;
 }
 
-.fl-flex-column {
-	display: flex;
-	flex-direction: column;
+.fl-flex[data-direction="column"] {
+  flex-direction: column;
 }
 
-.fl-flex-column > a {
-	width: 100%;
+.fl-flex[data-direction="row"] {
+  flex-direction: row;
 }
 
-.fl-flex-wrap {
-	flex-wrap: wrap;
+.fl-flex[data-wrap="wrap"] {
+  flex-wrap: wrap;
 }
 
-.fl-flex-wrap-reverse {
-	flex-wrap: wrap-reverse;
+.fl-flex[data-wrap="reverse"] {
+  flex-wrap: wrap-reverse;
 }
