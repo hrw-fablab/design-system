@@ -1,12 +1,20 @@
-.gap-large {
-	gap: var(--size-fluid-8);
+.gap {
+  --gap: var(--size-fluid-8);
+  gap: var(--gap);
 }
-.gap-medium {
-	gap: var(--size-fluid-5);
+
+.gap[data-gap="large"] {
+  --gap: var(--size-fluid-8);
 }
-.gap-small {
-	gap: var(--size-fluid-1);
+
+.gap[data-gap="medium"] {
+  --gap: var(--size-fluid-5);
 }
-.gap-tiny {
-	gap: var(--size-2);
+
+.gap[data-gap="small"] {
+  --gap: var(--size-fluid-1);
+}
+
+.gap[data-gap="tiny"] {
+  --gap: var(--size-2);
 }
