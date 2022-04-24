@@ -1,8 +1,6 @@
 .fl-content {
-  --mobile: 85vw;
   --desktop: 100rem;
-  width: min(var(--mobile), var(--desktop));
-  margin-inline: auto;
+  margin-inline: max((100% - var(--desktop)) /2, 2rem);
 }
 
 .fl-content[data-width="large"] {
@@ -14,7 +12,7 @@
 }
 
 .fl-content[data-width="small"] {
-  --desktop: 50rem;
+  --desktop: 55rem;
 }
 
 .fl-content[data-width="tiny"] {
