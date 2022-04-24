@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 0.9fr;
 
+  & a {
+    width: 100%;
+  }
+
   @media (--lg-n-below) {
     & {
       grid-template-columns: 1fr !important;

@@ -2,10 +2,11 @@
   display: grid;
   grid-template: "container";
   place-items: center center;
-  color: white;
+  color: var(--surface-1);
 
   & h2 {
     font-size: var(--font-size-7);
+    color: var(--surface-1);
   }
 
   & > * {
@@ -37,7 +38,7 @@
     }
 
     & .fl-content {
-      width: 100%;
+      width: 100vw;
     }
 
     & :where(picture, img, figure) {
