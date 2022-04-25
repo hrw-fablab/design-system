@@ -38,7 +38,7 @@
     }
 
     & .fl-content {
-      width: 100vw;
+      margin-inline: 0;
     }
 
     & :where(picture, img, figure) {
