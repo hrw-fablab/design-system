@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 0.9fr;
 
+  & h3 {
+    font-size: var(--font-size-5);
+  }
+
   & a {
     width: 100%;
   }
