@@ -1,6 +1,6 @@
 .fl-content {
   --desktop: 100rem;
-  margin-inline: max((100% - var(--desktop)) /2, 1rem);
+  margin-inline: max((100% - var(--desktop)) /2, 1.2rem);
 }
 
 .fl-content[data-width="large"] {
@@ -8,7 +8,7 @@
 }
 
 .fl-content[data-width="medium"] {
-  --desktop: 60rem;
+  --desktop: 70rem;
 }
 
 .fl-content[data-width="small"] {

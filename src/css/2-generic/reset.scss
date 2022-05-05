@@ -27,8 +27,16 @@ iframe,
 figure,
 canvas {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+}
+
+img,
+video,
+iframe,
+canvas {
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 input,

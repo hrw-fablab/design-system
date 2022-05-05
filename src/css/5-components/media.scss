@@ -1,5 +1,5 @@
 .fl-media {
-	& > :where(img,video,iframe) {
-		aspect-ratio: var(--aspect-widescreen);
-	}
+  & :where(img, video, iframe) {
+    aspect-ratio: var(--aspect-widescreen);
+  }
 }

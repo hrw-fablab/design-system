@@ -13,8 +13,8 @@
   & > * {
     aspect-ratio: inherit;
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: var(--size-fluid-3);
+    grid-template-columns: 1.3fr 1fr;
+    gap: var(--size-fluid-5);
     place-items: center start;
   }
 }

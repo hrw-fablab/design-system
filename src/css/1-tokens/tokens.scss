@@ -1,60 +1,63 @@
 /* purgecss start ignore */
 :where(html) {
-	--size-1: 0.1rem;
-	--size-2: 0.3rem;
-	--size-3: 0.5rem;
-	--size-4: 1rem;
-	--size-5: 2rem;
-	--size-6: 3rem;
-	--size-7: 5rem;
-	--size-8: 7rem;
-	--size-9: 10rem;
+  --size-1: 0.1rem;
+  --size-2: 0.3rem;
+  --size-3: 0.5rem;
+  --size-4: 1rem;
+  --size-5: 2rem;
+  --size-6: 3rem;
+  --size-7: 5rem;
+  --size-8: 7rem;
+  --size-9: 10rem;
 
-	--size-fluid-1: clamp(.5rem, 1vw, 1rem);
-	--size-fluid-2: clamp(1rem, 2vw, 1.5rem);
-	--size-fluid-3: clamp(1.5rem, 3vw, 2rem);
-	--size-fluid-4: clamp(2rem, 4vw, 3rem);
-	--size-fluid-5: clamp(4rem, 5vw, 5rem);
-	--size-fluid-6: clamp(5rem, 7vw, 7.5rem);
-	--size-fluid-7: clamp(7.5rem, 10vw, 10rem);
-	--size-fluid-8: clamp(10rem, 20vw, 15rem);
-	--size-fluid-9: clamp(15rem, 30vw, 20rem);
+  --size-fluid-1: clamp(0.8rem, 1vw, 1rem);
+  --size-fluid-2: clamp(1rem, 2vw, 1.5rem);
+  --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
+  --size-fluid-4: clamp(2rem, 4vw, 3rem);
+  --size-fluid-5: clamp(4rem, 5vw, 5rem);
+  --size-fluid-6: clamp(5rem, 7vw, 7.5rem);
+  --size-fluid-7: clamp(7.5rem, 10vw, 10rem);
+  --size-fluid-8: clamp(10rem, 20vw, 15rem);
+  --size-fluid-9: clamp(15rem, 30vw, 20rem);
 }
 :where(html) {
-	--font-size-1: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
-	--font-size-2: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
-	--font-size-3: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-	--font-size-4: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-	--font-size-5: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
-	--font-size-6: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
-	--font-size-7: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
-	--font-size-8: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+  --font-size-1: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  --font-size-2: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  --font-size-3: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  --font-size-4: clamp(1.5rem, 1.21rem + 0.8vw, 1.78rem);
+  --font-size-5: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+  --font-size-6: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  --font-size-7: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+  --font-size-8: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
 }
 :where(html) {
-	--shadow-color: 220 3% 15%;
-	--shadow-strength: 1%;
-	--shadow-1: 
-	  0 3px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
-	  0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+  --shadow-color: 0deg 0% 78%;
+  --shadow-elevation-low: 0.3px 0.5px 0.9px hsl(var(--shadow-color) / 0),
+    0.8px 1.6px 2.7px hsl(var(--shadow-color) / 0.28);
+  --shadow-elevation-medium: 0.3px 0.5px 0.9px hsl(var(--shadow-color) / 0),
+    3.9px 7.8px 13.1px hsl(var(--shadow-color) / 0.39);
+  --shadow-elevation-high: 0.3px 0.5px 0.9px hsl(var(--shadow-color) / 0),
+    4.5px 9.1px 15.2px hsl(var(--shadow-color) / 0.33),
+    14px 28px 47px hsl(var(--shadow-color) / 0.65);
 }
-@custom-media --xxs-n-above   (width >= 240px);
-@custom-media --xxs-n-below   (width <= 240px);
-@custom-media --xs-n-above    (width >= 360px);
-@custom-media --xs-n-below    (max-width: 360px);
-@custom-media --sm-n-above    (width >= 480px);
-@custom-media --sm-n-below    (max-width: 480px);
-@custom-media --md-n-above    (width >= 768px);
-@custom-media --md-n-below    (max-width: 768px);
-@custom-media --lg-n-above    (width >= 1024px);
-@custom-media --lg-n-below    (max-width: 1024px);
-@custom-media --xl-n-above    (width >= 1440px);
-@custom-media --xl-n-below    (max-width: 1440px);
-@custom-media --xxl-n-above   (width >= 1920px);
-@custom-media --xxl-n-below   (max-width: 1920px);
+@custom-media --xxs-n-above (width >= 240px);
+@custom-media --xxs-n-below (width <= 240px);
+@custom-media --xs-n-above (width >= 360px);
+@custom-media --xs-n-below (max-width: 360px);
+@custom-media --sm-n-above (width >= 480px);
+@custom-media --sm-n-below (max-width: 480px);
+@custom-media --md-n-above (width >= 768px);
+@custom-media --md-n-below (max-width: 768px);
+@custom-media --lg-n-above (width >= 1024px);
+@custom-media --lg-n-below (max-width: 1024px);
+@custom-media --xl-n-above (width >= 1440px);
+@custom-media --xl-n-below (max-width: 1440px);
+@custom-media --xxl-n-above (width >= 1920px);
+@custom-media --xxl-n-below (max-width: 1920px);
 :where(html) {
-	--aspect-box: 1;
-	--aspect-landscape: 4/3;
-	--aspect-portrait: 3/4;
-	--aspect-widescreen: 16/9;
+  --aspect-box: 1;
+  --aspect-landscape: 4/3;
+  --aspect-portrait: 3/4;
+  --aspect-widescreen: 16/9;
 }
 /* purgecss end ignore */

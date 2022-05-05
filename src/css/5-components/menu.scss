@@ -53,7 +53,7 @@
   align-items: start;
   position: absolute;
   background-color: var(--surface-2);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-elevation-medium);
   width: max-content;
 
   @media (--lg-n-below) {
