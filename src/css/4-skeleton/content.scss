@@ -1,6 +1,6 @@
 .fl-content {
   --desktop: 100rem;
-  margin-inline: max((100% - var(--desktop)) /2, 2rem);
+  margin-inline: max((100% - var(--desktop)) /2, 1rem);
 }
 
 .fl-content[data-width="large"] {

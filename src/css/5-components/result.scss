@@ -1,9 +1,11 @@
 .fl-result {
-  gap: var(--size-5);
   list-style: none;
-  width: 100%;
+
+  & p {
+    font-size: var(--font-size-2);
+  }
 }
 
 .fl-info {
-  color: lightgray
+  color: lightgray;
 }

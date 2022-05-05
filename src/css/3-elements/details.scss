@@ -1,0 +1,45 @@
+details {
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+details summary {
+  user-select: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: var(--size-3);
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  animation: sweep 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+details[open] > div {
+  width: 100%;
+  position: absolute;
+  background-color: red;
+}
+
+.deactive {
+  background-color: red;
+}
+
+@keyframes sweep {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: var(--shadow-1);
+  }
+}
