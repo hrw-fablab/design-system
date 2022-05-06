@@ -11,3 +11,16 @@ a {
 a:hover {
   color: var(--brand);
 }
+
+img,
+video,
+iframe,
+canvas {
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow-1);
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+}

@@ -1,6 +1,6 @@
 .fl-split {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
 
   & a {
     width: 100%;
@@ -23,8 +23,6 @@
 }
 
 div:nth-child(odd) .fl-split {
-  grid-template-columns: 0.9fr 1fr;
-
   & > :first-child {
     order: 1;
   }

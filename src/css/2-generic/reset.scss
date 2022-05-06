@@ -31,14 +31,6 @@ canvas {
   object-fit: cover;
 }
 
-img,
-video,
-iframe,
-canvas {
-  border-radius: 0.7rem;
-  box-shadow: var(--shadow-elevation-medium);
-}
-
 input,
 button,
 textarea,
@@ -60,10 +52,5 @@ h6 {
 a {
   color: inherit;
   width: max-content;
-}
-
-footer {
-  position: sticky;
-  top: 100vh;
 }
 /* purgecss end ignore */
