@@ -1,0 +1,19 @@
+form {
+  & p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+html :where(button, input, textarea, select) {
+  padding: var(--size-2);
+  padding-inline: var(--size-3);
+}
+
+html :where(input, textarea, select) {
+  border: solid 0.1rem var(--brand);
+}
+
+.fl-captcha {
+  font-size: var(--font-size-2);
+}

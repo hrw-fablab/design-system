@@ -17,7 +17,9 @@ video,
 iframe,
 canvas {
   border-radius: 0.7rem;
-  box-shadow: var(--shadow-1);
+  --shadow-color: 0deg 0% 20%;
+  filter: drop-shadow(0px 2px 8px hsl(var(--shadow-color) / 0.2))
+    drop-shadow(0px 0px 2px hsl(var(--shadow-color) / 0.2));
 }
 
 footer {

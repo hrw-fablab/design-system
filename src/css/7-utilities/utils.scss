@@ -10,28 +10,17 @@
   justify-content: center;
 }
 
-.fl-accent {
+*[data-style="color"] {
   background-color: var(--brand);
   color: var(--surface-1);
+  box-shadow: var(--shadow-2);
 
   & img {
-    box-shadow: var(--shadow-3);
-  }
-
-  & a:hover {
-    color: var(--surface-2) !important;
-  }
-}
-
-.fl-color {
-  background-color: var(--brand);
-  color: var(--surface-1);
-
-  & img {
-    box-shadow: var(--shadow-3);
+    filter: none;
   }
 
   & :where(button, select) {
+    border-color: var(--surface-1);
     color: var(--surface-1);
   }
 }

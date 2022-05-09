@@ -30,6 +30,10 @@
       display: flex;
     }
 
+    & button {
+      padding: inherit;
+    }
+
     & form {
       width: 100%;
       display: none;
