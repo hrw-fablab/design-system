@@ -25,6 +25,10 @@
   }
 }
 
+*[data-style="edge"] {
+  border-radius: 0.7rem;
+}
+
 .fl-glass {
   background-color: var(--brand);
   color: var(--surface-1);
