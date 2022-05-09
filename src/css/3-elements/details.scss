@@ -1,14 +1,16 @@
 details {
-  transition: background-color 0.3s ease;
   position: relative;
+  border: solid var(--surface-2) 0.15rem;
+  border-radius: 0.3rem;
+  padding: var(--size-3);
+  padding-inline: var(--size-4);
 }
 
 details summary {
   user-select: none;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--size-3);
   cursor: pointer;
 }
 
@@ -20,26 +22,12 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] {
-  animation: sweep 0.3s ease-in-out;
-  animation-fill-mode: forwards;
+details[open] summary svg {
+  transition: 0.4s transform ease;
+  transform: rotate(-180deg);
 }
 
-details[open] > div {
-  width: 100%;
-  position: absolute;
-  background-color: red;
-}
-
-.deactive {
-  background-color: red;
-}
-
-@keyframes sweep {
-  0% {
-    box-shadow: none;
-  }
-  100% {
-    box-shadow: var(--shadow-2);
-  }
+details summary svg {
+  transition: 0.4s transform ease;
+  transform: rotate(0deg);
 }

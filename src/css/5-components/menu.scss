@@ -2,7 +2,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 
   @media (--lg-n-below) {
     & {
@@ -43,7 +43,7 @@
 }
 
 .fl-submenu {
-  transform: translateY(2.2rem);
+  transform: translateY(2.3rem);
   top: 0;
   padding: var(--size-4);
   padding-inline-end: var(--size-6);

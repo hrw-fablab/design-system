@@ -1,6 +1,6 @@
 .fl-content {
   --desktop: 100rem;
-  margin-inline: max((100% - var(--desktop)) /2, 1.2rem);
+  padding-inline: max((100% - var(--desktop)) /2, 1.2rem);
 }
 
 .fl-content[data-width="large"] {
