@@ -23,6 +23,8 @@
 
   & #menu-button {
     display: none;
+    padding: var(--size-3);
+    border: solid var(--surface-2) 0.15rem;
   }
 
   @media (--lg-n-below) {

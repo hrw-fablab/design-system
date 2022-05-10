@@ -17,4 +17,8 @@
   & .full {
     max-height: var(--size-fluid-4);
   }
+
+  @media (--lg-n-below) {
+    margin-inline-end: inherit;
+  }
 }
