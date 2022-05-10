@@ -34,16 +34,17 @@
   }
 
   @media (--md-n-below) {
-    & {
-      place-items: inherit;
-    }
-
-    & .fl-content {
-      padding-inline: 0;
-    }
-
     & :where(picture, img, figure) {
       height: 100%;
+    }
+
+    & > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
     }
 
     & *[data-style="color"] {

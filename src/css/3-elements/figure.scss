@@ -1,15 +1,15 @@
 figure {
   position: relative;
-  height: 100%;
 }
 
 figcaption {
   position: absolute;
-  background-color: black;
   color: var(--surface-2);
   right: 0;
   top: 0;
   padding-inline: 0.2rem;
   z-index: 3;
-  font-size: 0.8rem;
+  background-color: var(--text-1);
+  border-radius: 0 0.7rem 0 0.7rem;
+  font-size: var(--font-size-1);
 }
