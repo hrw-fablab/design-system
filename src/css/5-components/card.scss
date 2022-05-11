@@ -1,4 +1,4 @@
-.fl-card {
+.card {
   @media (--md-n-below) {
     & {
       display: inline-block;
@@ -13,7 +13,7 @@
   }
 }
 
-.fl-card[data-type="person"] {
+.card[data-type="person"] {
   text-align: center;
 
   & img {

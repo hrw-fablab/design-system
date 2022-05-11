@@ -1,4 +1,4 @@
-.fl-calendar {
+.calendar {
   & > ul {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -13,7 +13,7 @@
   }
 }
 
-.fl-days {
+.days {
   border-block: solid 0.15rem rgb(245 245 245);
   border-inline-start: solid 0.15rem rgb(245 245 245);
   & li {
@@ -25,7 +25,7 @@
   }
 }
 
-.fl-events {
+.events {
   border-inline-start: solid 0.15rem rgb(245 245 245);
   & li {
     border-block-end: solid 0.15rem rgb(245 245 245);
@@ -34,16 +34,16 @@
   }
 }
 
-.fl-events {
+.events {
   counter-reset: section;
 }
 
-.fl-events details {
+.events details {
   height: 100%;
   width: 100%;
 }
 
-.fl-events details summary {
+.events details summary {
   height: 100%;
   width: 100%;
   display: flex;
@@ -53,7 +53,7 @@
   font-size: var(--font-size-2);
 }
 
-.fl-events .active::before {
+.events .active::before {
   position: absolute;
   counter-increment: section;
   content: counter(section);
@@ -63,22 +63,22 @@
   pointer-events: none;
 }
 
-.fl-events li details:hover {
+.events li details:hover {
   background-color: var(--surface-2);
 }
 
 @media (--lg-n-below) {
-  .fl-events li details summary span {
+  .events li details summary span {
     display: none;
   }
-  .fl-events li::before {
+  .events li::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
-.fl-calendar {
+.calendar {
   & details {
     transition: background-color 0.3s ease;
     position: relative;

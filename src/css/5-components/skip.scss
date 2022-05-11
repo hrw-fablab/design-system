@@ -1,4 +1,4 @@
-.fl-skip {
+.skip {
   left: 50%;
   position: absolute;
   transform: translateY(-400%);
@@ -7,6 +7,6 @@
   padding: 1rem;
 }
 
-.fl-skip:focus {
+.skip:focus {
   transform: translateY(0%);
 }

@@ -1,20 +1,20 @@
-.fl-blockquote {
-	& {
-		text-align: center;
-	}
-	
-	& p {
-		quotes: "“" "“" "“" "“";
-		font-size: var(--font-size-5);
-	}
+.blockquote {
+  & {
+    text-align: center;
+  }
 
-	& p::before {
-		content: open-quote;
-		color: var(--brand);
-	}
+  & p {
+    quotes: "“" "“" "“" "“";
+    font-size: var(--font-size-5);
+  }
 
-	& p::after {
-		content: close-quote;
-		color: var(--brand);
-	}
+  & p::before {
+    content: open-quote;
+    color: var(--brand);
+  }
+
+  & p::after {
+    content: close-quote;
+    color: var(--brand);
+  }
 }

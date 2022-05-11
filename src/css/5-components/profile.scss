@@ -1,8 +1,8 @@
-.fl-profile {
-	& img {
-		width: var(--size-6);
-		height: var(--size-6);
-		object-fit: cover;
-		border-radius: 50%;
-	}
+.profile {
+  & img {
+    width: var(--size-6);
+    height: var(--size-6);
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }

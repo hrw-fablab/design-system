@@ -1,4 +1,4 @@
-.fl-hero {
+.hero {
   display: grid;
   grid-template: "container";
   place-items: center start;
@@ -13,7 +13,7 @@
     border-radius: 0;
   }
 
-  & .fl-content {
+  & .content {
     z-index: 1;
   }
 
@@ -22,7 +22,7 @@
       height: 100%;
     }
 
-    & .fl-content {
+    & .content {
       width: 100%;
       height: 100%;
       padding-inline: 0;
@@ -30,7 +30,7 @@
   }
 }
 
-.fl-hero-content {
+.hero-content {
   width: min(100%, 70rem);
 
   & h1 {

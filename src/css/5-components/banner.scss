@@ -1,4 +1,4 @@
-.fl-banner {
+.banner {
   display: grid;
   grid-template: "container";
   place-items: center center;
@@ -27,7 +27,7 @@
     width: 100%;
   }
 
-  & .fl-illustration {
+  & .illustration {
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right bottom;

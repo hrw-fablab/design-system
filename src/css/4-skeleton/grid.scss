@@ -1,13 +1,13 @@
 /* purgecss start ignore */
 
-.fl-grid {
+.grid {
   display: grid;
   --fill: auto-fill;
   --card-size: 30rem;
   grid-template-columns: repeat(var(--fill), minmax(min(100%, var(--card-size)), 1fr));
 }
 
-.fl-grid[data-size="extrem"] {
+.grid[data-size="extrem"] {
   grid-template-columns: 1fr;
 
   & > * {
@@ -19,23 +19,23 @@
   }
 }
 
-.fl-grid[data-size="large"] {
+.grid[data-size="large"] {
   --card-size: 30rem;
 }
 
-.fl-grid[data-size="medium"] {
+.grid[data-size="medium"] {
   --card-size: 22rem;
 }
 
-.fl-grid[data-size="small"] {
+.grid[data-size="small"] {
   --card-size: 16rem;
 }
 
-.fl-grid[data-size="tiny"] {
+.grid[data-size="tiny"] {
   --card-size: 14rem;
 }
 
-.fl-grid[data-layout="newspaper"] {
+.grid[data-layout="newspaper"] {
   & > :first-child {
     grid-column: 1 / 3;
   }
@@ -49,7 +49,7 @@
   }
 }
 
-.fl-grid[data-layout="magazine"] {
+.grid[data-layout="magazine"] {
   & > :first-child {
     grid-column: 1 / 3;
 

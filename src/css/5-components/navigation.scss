@@ -1,4 +1,4 @@
-.fl-navigation {
+.navigation {
   box-shadow: var(--shadow-2);
   background-color: var(--surface-1);
   position: sticky;
@@ -45,7 +45,7 @@
       }
     }
 
-    & .fl-logo {
+    & .logo {
       flex: 2;
     }
 
