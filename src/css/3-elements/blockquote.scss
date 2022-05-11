@@ -1,0 +1,19 @@
+blockquote {
+  text-align: center;
+  quotes: "“" "“" "“" "“";
+  font-size: var(--font-size-5);
+
+  & p::before {
+    content: open-quote;
+    color: var(--brand);
+  }
+
+  & p::after {
+    content: close-quote;
+    color: var(--brand);
+  }
+}
+
+cite {
+  font-size: var(--font-size-3);
+}
