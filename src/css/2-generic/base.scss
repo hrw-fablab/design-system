@@ -5,7 +5,8 @@ body {
 }
 
 a {
-  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.1rem;
+  transition: color 200ms ease-in-out;
 }
 
 a:hover {

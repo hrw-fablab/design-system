@@ -21,13 +21,15 @@ html :where(input, textarea, select) {
 }
 
 select {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='18px'%0Afill='white' viewBox='0 0 102 60' aria-hidden='true' focusable='false'%3E%3Cpath d='M9 0 0 9l42 42 9 9 9-9 42-42-8-9-43 42Z' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='17px'%0Afill='black' viewBox='0 0 102 60' aria-hidden='true' focusable='false'%3E%3Cpath d='M9 0 0 9l42 42 9 9 9-9 42-42-8-9-43 42Z' /%3E%3C/svg%3E");
   background-position: calc(100% - 0.75rem) center;
   background-repeat: no-repeat;
+  background-color: var(--surface-1);
+  color: var(--text-1);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  padding-right: 2.5rem;
+  padding-right: 2.2rem;
 }
 
 input[type="search"] {

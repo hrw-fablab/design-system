@@ -19,6 +19,18 @@
     filter: none;
   }
 
+  & a:hover {
+    color: var(--surface-2);
+  }
+
+  & :focus-visible {
+    outline: 2px solid var(--surface-1);
+  }
+
+  & select {
+    color: var(--text-1);
+  }
+
   & :where(button, select) {
     border-color: var(--surface-1);
     color: var(--surface-1);
@@ -32,6 +44,10 @@
 .glass {
   background-color: var(--brand);
   color: var(--surface-1);
+
+  & a:hover {
+    color: var(--surface-2);
+  }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     & {

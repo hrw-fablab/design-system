@@ -5,14 +5,14 @@
   top: 0;
   z-index: 10;
 
-  & a {
-    text-decoration: none;
-    text-decoration-thickness: 0.1em;
+  & :where(a, button) {
+    text-decoration: underline 0.1rem transparent;
+    transition: text-decoration-color 250ms ease-in, fill 200ms ease-in;
   }
 
   & :hover:where(button, a) {
     color: var(--brand);
-    text-decoration: underline;
+    text-decoration-color: var(--brand);
     fill: var(--brand);
   }
 
