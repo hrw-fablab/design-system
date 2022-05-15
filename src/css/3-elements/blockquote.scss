@@ -6,11 +6,13 @@ blockquote {
   & p::before {
     content: open-quote;
     color: var(--brand);
+    padding: var(--size-3);
   }
 
   & p::after {
     content: close-quote;
     color: var(--brand);
+    padding: var(--size-3);
   }
 }
 

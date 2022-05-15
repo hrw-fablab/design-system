@@ -3,6 +3,16 @@
   grid-template-columns: 1fr 1fr;
   place-items: center;
 
+  & :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-fluid-1);
+  }
+
+  & :where(img, video) {
+    aspect-ratio: var(--aspect-widescreen);
+  }
+
   @media (--lg-n-below) {
     & {
       grid-template-columns: 1fr;

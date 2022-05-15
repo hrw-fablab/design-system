@@ -5,6 +5,9 @@
   transition: transform 0.3s;
   z-index: 20;
   padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: var(--brand);
+  color: var(--surface-1);
 }
 
 .skip:focus {

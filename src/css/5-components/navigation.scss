@@ -4,9 +4,14 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-fluid-1);
+  flex-wrap: wrap;
 
   & :where(a, button) {
-    text-decoration: underline 0.1rem transparent;
+    text-decoration: underline 0.1em transparent;
     transition: text-decoration-color 250ms ease-in, fill 200ms ease-in;
   }
 
@@ -34,6 +39,10 @@
 
     & button {
       padding: inherit;
+    }
+
+    & ul li:not(:last-child) {
+      border-block-end: solid #ddd 0.15rem;
     }
 
     & form {

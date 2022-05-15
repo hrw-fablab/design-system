@@ -1,4 +1,10 @@
 .card {
+  aspect-ratio: var(--aspect-widescreen);
+
+  & :where(img) {
+    aspect-ratio: var(--aspect-widescreen);
+  }
+
   @media (--md-n-below) {
     & {
       display: inline-block;

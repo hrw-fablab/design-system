@@ -1,4 +1,8 @@
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: var(--size-fluid-1);
   flex-shrink: 0;
   font-size: var(--font-size-4);
   margin-inline-end: 2rem;

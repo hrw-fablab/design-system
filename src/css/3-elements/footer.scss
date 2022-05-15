@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  & > :first-child {
+    background-color: var(--text-1);
+  }
+
+  & > :nth-child(2) {
+    background-color: green;
+  }
+
+  @media (--lg-n-below) {
+    flex-direction: column;
+
+    & div {
+      flex-direction: column;
+      gap: var(--size-6) !important;
+      margin-inline-start: inherit !important;
+      align-items: start !important;
+    }
+  }
+}
