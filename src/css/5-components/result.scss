@@ -1,11 +1,4 @@
-.result {
-  list-style: none;
-
-  & p {
-    font-size: var(--font-size-2);
-  }
-}
-
 .info {
-  color: lightgray;
+  color: var(--surface-2);
+  font-size: var(--font-size-2);
 }

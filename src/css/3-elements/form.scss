@@ -32,12 +32,12 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  padding-right: 2.2rem;
+  padding-right: var(--size-5);
 }
 
 input[type="search"] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath d='M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z'/%3E%3C/svg%3E");
   background-position: calc(100% - 0.75rem) center;
   background-repeat: no-repeat;
-  padding-right: 3rem;
+  padding-right: var(--size-6);
 }

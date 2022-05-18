@@ -1,10 +1,10 @@
 body {
   background-color: var(--surface-1);
   color: var(--text-1);
-  background-size: 20%;
 }
 
 a {
+  color: inherit;
   text-decoration-thickness: 0.1em;
   transition: color 200ms ease-in-out;
 }
@@ -21,6 +21,7 @@ canvas {
   --shadow-color: 0deg 0% 20%;
   filter: drop-shadow(0px 2px 8px hsl(var(--shadow-color) / 0.2))
     drop-shadow(0px 0px 2px hsl(var(--shadow-color) / 0.2));
+  aspect-ratio: var(--aspect-widescreen);
 }
 
 footer {

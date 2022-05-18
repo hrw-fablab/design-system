@@ -2,13 +2,10 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: black;
+  color: var(--surface-1);
 
   & > :first-child {
     background-color: var(--text-1);
-  }
-
-  & > :nth-child(2) {
-    background-color: green;
   }
 
   @media (--lg-n-below) {

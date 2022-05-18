@@ -14,6 +14,8 @@
   background-color: var(--brand);
   color: var(--surface-1);
   box-shadow: var(--shadow-2);
+  padding-block-start: var(--size-fluid-3);
+  padding-block-end: var(--size-fluid-5);
 
   & img {
     filter: none;
@@ -35,10 +37,15 @@
     border-color: var(--surface-1);
     color: var(--surface-1);
   }
+
+  &:where(.content, .media) {
+    padding-block: var(--size-fluid-6);
+    clip-path: polygon(0 calc(0% + 3vw), 100% 0, 100% calc(100% - 3vw), 0 100%);
+  }
 }
 
-*[data-border="round"] {
-  border-radius: 0.7rem;
+html .banner:not(:first-of-type) {
+  clip-path: polygon(0 calc(0% + 3vw), 100% 0, 100% calc(100% - 3vw), 0 100%);
 }
 
 .glass {
