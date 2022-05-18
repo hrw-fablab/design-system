@@ -14,7 +14,7 @@
   }
 
   & :where(picture, img, figure) {
-    height: 500px;
+    height: 450px;
     border-radius: 0;
   }
 
@@ -23,12 +23,12 @@
   }
 
   & *[data-style="color"] {
-    height: 500px;
+    height: 450px;
     width: 100%;
   }
 
   & .illustration {
-    background-size: 40%;
+    background-size: 30%;
     background-repeat: no-repeat;
     background-position: right bottom;
   }
