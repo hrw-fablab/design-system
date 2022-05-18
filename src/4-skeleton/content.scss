@@ -1,20 +1,20 @@
 .content {
   --desktop: 100rem;
   padding-inline: max((100% - var(--desktop)) /2, 1.2rem);
-}
 
-.content[data-width="large"] {
-  --desktop: 90rem;
-}
+  &[data-width="large"] {
+    --desktop: 90rem;
+  }
 
-.content[data-width="medium"] {
-  --desktop: 70rem;
-}
+  &[data-width="medium"] {
+    --desktop: 70rem;
+  }
 
-.content[data-width="small"] {
-  --desktop: 55rem;
-}
+  &[data-width="small"] {
+    --desktop: 55rem;
+  }
 
-.content[data-width="tiny"] {
-  --desktop: 30rem;
+  &[data-width="tiny"] {
+    --desktop: 30rem;
+  }
 }

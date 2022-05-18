@@ -1,4 +1,4 @@
-*[data-margin] {
+html :where(*[data-margin]) {
   margin: var(--margin);
 }
 
@@ -42,7 +42,7 @@
   margin-block-end: var(--margin-block-end);
 }
 
-*[data-margin-block-end="large"] {
+html :where([data-margin-block-end="large"]) {
   --margin-block-end: var(--size-fluid-6);
 }
 

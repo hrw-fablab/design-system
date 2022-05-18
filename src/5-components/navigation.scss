@@ -1,5 +1,5 @@
 .navigation {
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow);
   background-color: var(--surface-1);
   position: sticky;
   top: 0;
@@ -42,7 +42,7 @@
     }
 
     & ul li:not(:last-child) {
-      border-block-end: solid #ddd 0.15rem;
+      border-block-end: solid var(--surface-2) 0.15rem;
     }
 
     & form {

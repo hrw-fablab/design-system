@@ -20,8 +20,8 @@
       gap: var(--size-4);
     }
 
-    & > :first-child {
-      order: 0 !important;
+    & > div {
+      order: 0;
     }
   }
 }

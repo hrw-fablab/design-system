@@ -31,18 +31,8 @@
   --font-size-8: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
 }
 :where(html) {
-  --shadow-1: 0px 8px 30px rgb(238 238 238), 0px 4px 8px rgba(66, 71, 76, 0.32),
-    0px 0px 1px rgba(66, 71, 76, 0.2);
-  --shadow-2: 0px 4px 8px rgba(66, 71, 76, 0.2), 0px 0px 1px rgba(66, 71, 76, 0.2);
-  --shadow-3: 0px 8px 30px rgb(33, 33, 33), 0px 4px 8px rgba(76, 82, 87, 0.32),
-    0px 0px 1px rgba(169, 182, 195, 0.3);
+  --shadow: 0px 4px 8px rgba(66, 71, 76, 0.2), 0px 0px 1px rgba(66, 71, 76, 0.2);
 }
-@custom-media --xxs-n-above (width >= 240px);
-@custom-media --xxs-n-below (width <= 240px);
-@custom-media --xs-n-above (width >= 360px);
-@custom-media --xs-n-below (max-width: 360px);
-@custom-media --sm-n-above (width >= 480px);
-@custom-media --sm-n-below (max-width: 480px);
 @custom-media --md-n-above (width >= 768px);
 @custom-media --md-n-below (max-width: 768px);
 @custom-media --lg-n-above (width >= 1024px);

@@ -1,21 +1,6 @@
 .card {
-  aspect-ratio: var(--aspect-widescreen);
-
-  & :where(img) {
-    aspect-ratio: var(--aspect-widescreen);
-  }
-
-  @media (--md-n-below) {
-    & {
-      display: inline-block;
-      grid-column: inherit !important;
-      aspect-ratio: var(--aspect-widescreen) !important;
-      grid-template-columns: inherit;
-    }
-
-    & img {
-      aspect-ratio: var(--aspect-widescreen) !important;
-    }
+  & header {
+    padding-block: inherit;
   }
 }
 
@@ -25,7 +10,7 @@
   & img {
     width: 50%;
     height: auto;
-    aspect-ratio: var(--aspect-box) !important;
+    aspect-ratio: var(--aspect-box);
     border-radius: 50%;
   }
 }
