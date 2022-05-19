@@ -12,6 +12,7 @@
     max-height: var(--size-fluid-2);
     filter: none;
     border-radius: none;
+    aspect-ratio: inherit;
   }
 
   & svg {
