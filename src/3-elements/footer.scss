@@ -3,6 +3,11 @@ footer {
   flex-direction: column;
   background-color: black;
   color: var(--surface-1);
+  margin-block-start: var(--size-fluid-6);
+
+  & img {
+    aspect-ratio: inherit;
+  }
 
   & > :first-child {
     background-color: var(--text-1);

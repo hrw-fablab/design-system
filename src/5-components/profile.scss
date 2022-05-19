@@ -1,4 +1,9 @@
 .profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--size-fluid-1);
+
   & img {
     width: var(--size-6);
     height: var(--size-6);
