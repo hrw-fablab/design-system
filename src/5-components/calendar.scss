@@ -15,6 +15,21 @@
     justify-content: space-between;
     font-size: var(--font-size-4);
   }
+
+  @media (--lg-n-below) {
+    & > ul {
+      grid-template-columns: 1fr;
+      gap: var(--size-fluid-4);
+    }
+
+    & .days {
+      display: none;
+    }
+
+    & li:where(.deactive, :not(.elements)) {
+      display: none !important;
+    }
+  }
 }
 
 .days {
@@ -43,36 +58,108 @@
     align-items: end;
     gap: 0.5rem;
   }
-}
 
-details {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  width: 100%;
-
-  & summary {
-    padding-inline: 0.5rem;
-    background-color: aquamarine;
-    font-size: var(--font-size-2);
+  & details {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
   }
 
-  &[open] > div {
+  & summary {
+    border-inline-start: solid var(--brand) 0.2rem;
+    background-color: rgb(240 240 240);
+    padding: 0.5rem;
+    font-size: var(--font-size-2);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+  & .day {
+    display: none;
+  }
+
+  & .info {
+    display: flex;
+    gap: 0.2rem;
+  }
+
+  & .info :first-child::after {
+    content: "-";
+    padding-inline-start: 0.2rem;
+  }
+
+  & time {
+    gap: 0;
+  }
+
+  & details[open] > div {
+    border-inline-start: solid var(--brand) 0.2rem;
     width: 20rem;
     padding: 0.5rem;
     position: absolute;
-    background-color: var(--surface-1);
+    background-color: rgb(240 240 240);
     box-shadow: var(--shadow);
     z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-}
 
-.detail > div {
-  display: flex;
-  gap: 1rem;
+  @media (--lg-n-below) {
+    & {
+      border: none;
+    }
+
+    & .day {
+      background-color: var(--brand);
+      width: 5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    & li {
+      border: none;
+      aspect-ratio: inherit;
+    }
+
+    & details summary {
+      border: none;
+      height: 6rem;
+      padding: 0;
+      font-size: var(--font-size-3);
+      background-color: var(--surface-1);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      place-items: center start;
+      gap: 2rem;
+    }
+
+    & .cl-info {
+      display: flex;
+      flex-direction: column;
+      padding: var(--size-fluid-2);
+      gap: var(--size-1);
+    }
+
+    & details[open] {
+      position: relative;
+    }
+
+    & details[open] > div {
+      position: relative;
+      background-color: var(--surface-1);
+      width: 100%;
+      border: 0;
+    }
+  }
 }
 
 .events .active::before {
@@ -85,4 +172,10 @@ details {
   font-size: var(--font-size-3);
   pointer-events: none;
   z-index: 1;
+
+  @media (--lg-n-below) {
+    & {
+      display: none;
+    }
+  }
 }

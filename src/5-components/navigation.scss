@@ -10,6 +10,16 @@
   gap: var(--size-fluid-1);
   flex-wrap: wrap;
 
+  & button:focus svg {
+    transition: 0.4s transform ease;
+    transform: rotate(-180deg);
+  }
+
+  & button:not(:focus) svg {
+    transition: 0.4s transform ease;
+    transform: rotate(0deg);
+  }
+
   & :where(a, button) {
     text-decoration: underline 0.1em transparent;
     transition: text-decoration-color 250ms ease-in, fill 200ms ease-in;
