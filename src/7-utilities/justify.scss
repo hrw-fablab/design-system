@@ -1,23 +1,23 @@
-.justify-start {
-	justify-content: start;
+:where(.justify-start) {
+  justify-content: start;
 }
 
-.justify-center {
-	justify-content: center;
+:where(.justify-center) {
+  justify-content: center;
 }
 
-.justify-end {
-	justify-content: end;
+:where(.justify-end) {
+  justify-content: end;
 }
 
-.justify-between {
-	justify-content: space-between;
+:where(.justify-between) {
+  justify-content: space-between;
 }
 
-.justify-around {
-	justify-content: space-around;
+:where(.justify-around) {
+  justify-content: space-around;
 }
 
-.justify-evenly {
-	justify-content: space-evenly;
+:where(.justify-evenly) {
+  justify-content: space-evenly;
 }

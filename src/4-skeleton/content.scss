@@ -1,4 +1,4 @@
-.content {
+:where(.content) {
   --desktop: 100rem;
   padding-inline: max((100% - var(--desktop)) /2, 1.2rem);
 

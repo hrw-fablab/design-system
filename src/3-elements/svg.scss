@@ -1,3 +1,3 @@
-svg {
-	pointer-events: none;
+:where(svg) {
+  pointer-events: none;
 }

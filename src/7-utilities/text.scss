@@ -1,11 +1,11 @@
-.text-start {
+:where(.text-start) {
   text-align: start;
 }
 
-.text-centered {
+:where(.text-centered) {
   text-align: center;
 }
 
-.text-end {
+:where(.text-end) {
   text-align: end;
 }

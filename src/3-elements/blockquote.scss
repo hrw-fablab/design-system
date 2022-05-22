@@ -1,4 +1,4 @@
-blockquote {
+:where(blockquote) {
   text-align: center;
   quotes: "“" "“" "“" "“";
   font-size: var(--font-size-5);

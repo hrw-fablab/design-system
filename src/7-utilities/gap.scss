@@ -1,20 +1,20 @@
-.gap {
+:where(.gap) {
   --gap: var(--size-fluid-8);
   gap: var(--gap);
-}
 
-.gap[data-gap="large"] {
-  --gap: var(--size-fluid-8);
-}
+  &[data-gap="large"] {
+    --gap: var(--size-fluid-8);
+  }
 
-.gap[data-gap="medium"] {
-  --gap: var(--size-fluid-5);
-}
+  &[data-gap="medium"] {
+    --gap: var(--size-fluid-5);
+  }
 
-.gap[data-gap="small"] {
-  --gap: var(--size-fluid-1);
-}
+  &[data-gap="small"] {
+    --gap: var(--size-fluid-1);
+  }
 
-.gap[data-gap="tiny"] {
-  --gap: var(--size-2);
+  &[data-gap="tiny"] {
+    --gap: var(--size-2);
+  }
 }

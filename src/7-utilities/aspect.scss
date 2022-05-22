@@ -1,15 +1,15 @@
-.aspect-landscape{
-	aspect-ratio: var(--aspect-landscape);
+:where(aspect-landscape) {
+  aspect-ratio: var(--aspect-landscape);
 }
 
-.aspect-widescreen{
-	aspect-ratio: var(--aspect-widescreen);
+:where(aspect-widescreen) {
+  aspect-ratio: var(--aspect-widescreen);
 }
 
-.aspect-portrait{
-	aspect-ratio: var(--aspect-portrait);
+:where(aspect-portrait) {
+  aspect-ratio: var(--aspect-portrait);
 }
 
-.aspect-box{
-	aspect-ratio: var(--aspect-box);
+:where(aspect-box) {
+  aspect-ratio: var(--aspect-box);
 }

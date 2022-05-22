@@ -19,31 +19,19 @@ main {
   min-height: 100vh;
 }
 
-img,
-video,
-iframe,
-figure,
-canvas {
+:where(img, video, iframe, figure, canvas) {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
-input,
-button,
-textarea,
-select {
+:where(input, button, textarea, select) {
   background-color: transparent;
   border: none;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:where(p, h1, h2, h3, h4, h5, h6) {
   overflow-wrap: break-word;
 }
 

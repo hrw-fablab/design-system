@@ -1,19 +1,19 @@
-.flex {
+:where(.flex) {
   display: flex;
-}
 
-.flex[data-direction="column"] {
-  flex-direction: column;
-}
+  &[data-direction="column"] {
+    flex-direction: column;
+  }
 
-.flex[data-direction="row"] {
-  flex-direction: row;
-}
+  &[data-direction="row"] {
+    flex-direction: row;
+  }
 
-.flex[data-wrap="wrap"] {
-  flex-wrap: wrap;
-}
+  &[data-direction="wrap"] {
+    flex-wrap: wrap;
+  }
 
-.flex[data-wrap="reverse"] {
-  flex-wrap: wrap-reverse;
+  &[data-direction="reverse"] {
+    flex-wrap: wrap-reverse;
+  }
 }

@@ -13,10 +13,7 @@ a:hover {
   color: var(--brand);
 }
 
-img,
-video,
-iframe,
-canvas {
+:where(img, video, iframe, canvas) {
   border-radius: 0.7rem;
   --shadow-color: 0deg 0% 20%;
   filter: drop-shadow(0px 2px 8px hsl(var(--shadow-color) / 0.2))

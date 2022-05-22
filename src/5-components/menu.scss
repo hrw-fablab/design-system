@@ -1,12 +1,17 @@
 .menu {
-  & ul {
+  & :where(ul) {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    width: 100%;
   }
 
-  & .submenu {
+  & li {
+    position: relative;
+  }
+
+  &[data-menu="submenu"] {
     transform: translateY(2.3rem);
     top: 0;
     flex-direction: column;
@@ -19,20 +24,19 @@
     gap: var(--size-fluid-1);
   }
 
-  & li {
-    position: relative;
-  }
-
   @media (--lg-n-below) {
     & ul {
       flex-direction: column;
       align-items: start;
       gap: inherit;
-      flex: 1;
+      align-items: stretch;
+    }
+
+    & ul li:not(:last-child) {
+      border-block-end: solid var(--surface-2) 0.15rem;
     }
 
     & li {
-      width: 100%;
       padding-block: var(--size-3);
     }
 
@@ -49,9 +53,15 @@
       justify-content: space-between;
     }
 
-    & .submenu {
-      all: inherit;
-      padding-inline-start: 1rem;
+    &[data-menu="submenu"] {
+      align-items: stretch;
+      background-color: inherit;
+      border-radius: inherit;
+      position: relative;
+      box-shadow: inherit;
+      transform: inherit;
+      width: 100%;
+      gap: inherit;
     }
   }
 }

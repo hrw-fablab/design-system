@@ -1,33 +1,30 @@
-details {
+:where(details) {
   position: relative;
   border: solid var(--surface-2) 0.15rem;
   border-radius: 0.3rem;
   padding: var(--size-3);
   padding-inline: var(--size-4);
-}
 
-details summary {
-  user-select: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
+  & summary {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
 
-summary {
-  list-style: none;
-}
+  & summary::-webkit-details-marker {
+    display: none;
+  }
 
-summary::-webkit-details-marker {
-  display: none;
-}
+  &[open] summary svg {
+    transition: 0.4s transform ease;
+    transform: rotate(-180deg);
+  }
 
-details[open] summary svg {
-  transition: 0.4s transform ease;
-  transform: rotate(-180deg);
-}
-
-details summary svg {
-  transition: 0.4s transform ease;
-  transform: rotate(0deg);
+  & summary svg {
+    transition: 0.4s transform ease;
+    transform: rotate(0deg);
+  }
 }

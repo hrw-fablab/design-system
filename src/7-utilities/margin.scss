@@ -1,139 +1,139 @@
-html :where(*[data-margin]) {
+:where([data-margin]) {
   margin: var(--margin);
 }
 
-*[data-margin="large"] {
+:where([data-margin="large"]) {
   --margin: var(--size-fluid-6);
 }
 
-*[data-margin="medium"] {
+:where([data-margin="medium"]) {
   --margin: var(--size-fluid-4);
 }
 
-*[data-margin="small"] {
+:where([data-margin="small"]) {
   --margin: var(--size-fluid-1);
 }
 
-*[data-margin="tiny"] {
+:where([data-margin="tiny"]) {
   --margin: var(--size-2);
 }
 
-*[data-margin-block] {
+:where([data-margin-block]) {
   margin-block: var(--margin-block);
 }
 
-*[data-margin-block="large"] {
+:where([data-margin-block="large"]) {
   --margin-block: var(--size-fluid-6);
 }
 
-*[data-margin-block="medium"] {
+:where([data-margin-block="medium"]) {
   --margin-block: var(--size-fluid-4);
 }
 
-*[data-margin-block="small"] {
+:where([data-margin-block="small"]) {
   --margin-block: var(--size-fluid-1);
 }
 
-*[data-margin-block="tiny"] {
+:where([data-margin-block="tiny"]) {
   --margin-block: var(--size-2);
 }
 
-*[data-margin-block-end] {
+:where([data-margin-block-end]) {
   margin-block-end: var(--margin-block-end);
 }
 
-html :where([data-margin-block-end="large"]) {
+:where([data-margin-block-end="large"]) {
   --margin-block-end: var(--size-fluid-6);
 }
 
-*[data-margin-block-end="medium"] {
+:where([data-margin-block-end="medium"]) {
   --margin-block-end: var(--size-fluid-4);
 }
 
-*[data-margin-block-end="small"] {
+:where([data-margin-block-end="small"]) {
   --margin-block-end: var(--size-fluid-1);
 }
 
-*[data-margin-block-end="tiny"] {
+:where([data-margin-block-end="tiny"]) {
   --margin-block-end: var(--size-2);
 }
 
-*[data-margin-block-start] {
+:where([data-margin-block-start]) {
   margin-block-start: var(--margin-block-start);
 }
 
-*[data-margin-block-start="large"] {
+:where([data-margin-block-start="large"]) {
   --margin-block-start: var(--size-fluid-6);
 }
 
-*[data-margin-block-start="medium"] {
+:where([data-margin-block-start="medium"]) {
   --margin-block-start: var(--size-fluid-4);
 }
 
-*[data-margin-block-start="small"] {
+:where([data-margin-block-start="small"]) {
   --margin-block-start: var(--size-fluid-1);
 }
 
-*[data-margin-block-start="tiny"] {
+:where([data-margin-block-start="tiny"]) {
   --margin-block-start: var(--size-2);
 }
 
-*[data-margin-inline] {
+:where([data-margin-inline]) {
   margin-inline: var(--margin-inline);
 }
 
-*[data-margin-inlinet="large"] {
+:where([data-margin-inlinet="large"]) {
   --margin-inline: var(--size-fluid-6);
 }
 
-*[data-margin-inline="medium"] {
+:where([data-margin-inline="medium"]) {
   --margin-inline: var(--size-fluid-4);
 }
 
-*[data-margin-inline="small"] {
+:where([data-margin-inline="small"]) {
   --margin-inline: var(--size-fluid-1);
 }
 
-*[data-margin-inline="tiny"] {
+:where([data-margin-inline="tiny"]) {
   --margin-inline: var(--size-2);
 }
 
-*[data-margin-inline-start] {
+:where([data-margin-inline-start]) {
   margin-inline-start: var(--margin-inline-start);
 }
 
-*[data-margin-inlinet-start="large"] {
+:where([data-margin-inlinet-start="large"]) {
   --margin-inline-start: var(--size-fluid-6);
 }
 
-*[data-margin-inline-start="medium"] {
+:where([data-margin-inline-start="medium"]) {
   --margin-inline-start: var(--size-fluid-4);
 }
 
-*[data-margin-inline-start="small"] {
+:where([data-margin-inline-start="small"]) {
   --margin-inline-start: var(--size-fluid-1);
 }
 
-*[data-margin-inline-start="tiny"] {
+:where([data-margin-inline-start="tiny"]) {
   --margin-inline-start: var(--size-2);
 }
 
-*[data-margin-inline-end] {
+:where([data-margin-inline-end]) {
   margin-inline-end: var(--margin-inline-end);
 }
 
-*[data-margin-inlinet-end="large"] {
+:where([data-margin-inlinet-end="large"]) {
   --margin-inline-end: var(--size-fluid-6);
 }
 
-*[data-margin-inline-end="medium"] {
+:where([data-margin-inline-end="medium"]) {
   --margin-inline-end: var(--size-fluid-4);
 }
 
-*[data-margin-inline-end="small"] {
+:where([data-margin-inline-end="small"]) {
   --margin-inline-end: var(--size-fluid-1);
 }
 
-*[data-margin-inline-end="tiny"] {
+:where([data-margin-inline-end="tiny"]) {
   --margin-inline-end: var(--size-2);
 }

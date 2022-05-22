@@ -1,4 +1,4 @@
-footer {
+:where(footer) {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -18,9 +18,9 @@ footer {
 
     & div {
       flex-direction: column;
-      gap: var(--size-6) !important;
-      margin-inline-start: inherit !important;
-      align-items: start !important;
+      gap: var(--size-6);
+      margin-inline-start: inherit;
+      align-items: start;
     }
   }
 }

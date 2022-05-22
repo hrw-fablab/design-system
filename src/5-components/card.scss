@@ -1,16 +1,12 @@
 .card {
-  & header {
-    padding-block: inherit;
-  }
-}
+  &[data-type="person"] {
+    text-align: center;
 
-.card[data-type="person"] {
-  text-align: center;
-
-  & img {
-    width: 50%;
-    height: auto;
-    aspect-ratio: var(--aspect-box);
-    border-radius: 50%;
+    & img {
+      width: 50%;
+      height: auto;
+      aspect-ratio: var(--aspect-box);
+      border-radius: 50%;
+    }
   }
 }

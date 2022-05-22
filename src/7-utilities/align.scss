@@ -1,24 +1,23 @@
-.align-start {
-	align-items: start;
+:where(.align-start) {
+  align-items: start;
 }
 
-.align-center {
-	align-items: center;
+:where(.align-center) {
+  align-items: center;
 }
 
-.align-end {
-	align-items: end;
+:where(.align-end) {
+  align-items: end;
 }
 
-
-.align-self-start {
-	align-self: start;
+:where(.align-self-start) {
+  align-self: start;
 }
 
-.align-self-center {
-	align-self: center;
+:where(.align-self-center) {
+  align-self: center;
 }
 
-.align-self-end {
-	align-self: end;
+:where(.align-self-end) {
+  align-self: end;
 }

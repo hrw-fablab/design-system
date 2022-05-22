@@ -4,11 +4,6 @@
   place-items: center center;
   color: var(--surface-1);
 
-  & h2 {
-    font-size: var(--font-size-6);
-    color: var(--surface-1);
-  }
-
   & > * {
     grid-area: container;
   }
@@ -22,15 +17,9 @@
     z-index: 1;
   }
 
-  & *[data-style="color"] {
+  & :where([data-style="accent"], [data-style="illustration"]) {
     height: 450px;
     width: 100%;
-  }
-
-  & .illustration {
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
   }
 
   @media (--md-n-below) {
@@ -46,10 +35,10 @@
     }
 
     & > .illustration {
-      background-image: none !important;
+      background-image: none;
     }
 
-    & *[data-style="color"] {
+    & :is([data-style="color"], [data-style="illustration"]) {
       height: 300px;
     }
   }
