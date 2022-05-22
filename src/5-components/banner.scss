@@ -9,7 +9,7 @@
   }
 
   & :where(picture, img, figure) {
-    height: 450px;
+    height: 400px;
     border-radius: 0;
   }
 
@@ -18,7 +18,7 @@
   }
 
   & :where([data-style="accent"], [data-style="illustration"]) {
-    height: 450px;
+    height: 400px;
     width: 100%;
   }
 
@@ -39,7 +39,7 @@
     }
 
     & :is([data-style="color"], [data-style="illustration"]) {
-      height: 300px;
+      height: 200px;
     }
   }
 }

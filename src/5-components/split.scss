@@ -4,6 +4,10 @@
   place-items: center;
   padding-block: var(--size-fluid-4);
 
+  & h2 {
+    font-size: var(--font-size-5);
+  }
+
   & > div {
     display: flex;
     flex-direction: column;
