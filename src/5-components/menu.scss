@@ -32,7 +32,7 @@
       align-items: stretch;
     }
 
-    & ul li:not(:last-child) {
+    & li:not(:last-child) {
       border-block-end: solid var(--surface-2) 0.15rem;
     }
 
@@ -48,7 +48,7 @@
       width: 100%;
     }
 
-    & li button {
+    & button {
       display: flex;
       justify-content: space-between;
     }
