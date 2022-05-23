@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--text-1);
   text-decoration-thickness: 0.1em;
   transition: color 200ms ease-in-out;
 }
