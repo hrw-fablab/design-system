@@ -2,6 +2,11 @@
   &[data-type="person"] {
     text-align: center;
 
+    & picture {
+      display: flex;
+      justify-content: center;
+    }
+
     & img {
       width: 50%;
       height: auto;
