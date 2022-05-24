@@ -12,14 +12,14 @@
     list-style: circle;
   }
 
-  & img .left {
+  & .left {
     align-self: start;
     aspect-ratio: inherit;
     max-width: 100%;
     width: unset;
   }
 
-  & img .centered {
+  & .centered {
     aspect-ratio: inherit;
     align-self: center;
     max-width: 100%;
