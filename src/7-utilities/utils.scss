@@ -14,12 +14,17 @@
     filter: none;
   }
 
-  & a {
+  & :is(a, svg, button, select) {
     color: var(--surface-1);
+    fill: var(--surface-1);
   }
 
   & a:hover {
     color: var(--surface-2);
+  }
+
+  & a:hover svg {
+    fill: var(--surface-2);
   }
 
   & :focus-visible {
@@ -32,7 +37,6 @@
 
   & :where(button, select) {
     border-color: var(--surface-1);
-    color: var(--surface-1);
   }
 
   &:where(.content, .media) {

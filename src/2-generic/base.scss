@@ -13,6 +13,10 @@ a:hover {
   color: var(--brand);
 }
 
+a:hover svg {
+  fill: var(--brand);
+}
+
 :where(img, video, iframe, canvas) {
   border-radius: 0.7rem;
   --shadow-color: 0deg 0% 20%;
