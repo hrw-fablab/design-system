@@ -1,3 +1,7 @@
 :where(article) {
   aspect-ratio: var(--aspect-widescreen);
+
+  & h1 {
+    margin-block-end: var(--size-4);
+  }
 }
