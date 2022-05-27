@@ -39,7 +39,7 @@
     border-color: var(--surface-1);
   }
 
-  &:where(.content, .media) {
+  &:is(.content, .media) {
     padding-block: var(--size-fluid-6);
     clip-path: polygon(0 calc(0% + 3vw), 100% 0, 100% calc(100% - 3vw), 0 100%);
   }
