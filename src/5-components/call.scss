@@ -6,7 +6,7 @@
   align-items: center;
 
   & a {
-    all: unset;
+    text-decoration: none;
     padding: var(--size-3);
     padding-inline: var(--size-4);
     background-color: var(--brand);
@@ -17,6 +17,7 @@
   }
 
   & a:hover {
-    background-color: var(--surface-2);
+    box-shadow: var(--shadow);
+    filter: saturate(1.2);
   }
 }

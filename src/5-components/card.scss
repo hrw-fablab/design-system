@@ -1,4 +1,18 @@
 .card {
+  position: relative;
+
+  & a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  &:not([data-type="person"]):is([data-type="link"]) {
+    &:hover {
+      color: var(--brand);
+    }
+  }
+
   &[data-type="person"] {
     text-align: center;
 
