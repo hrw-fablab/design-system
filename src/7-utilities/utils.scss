@@ -60,6 +60,10 @@ html .banner:not(:first-of-type) {
   background-color: var(--brand);
   color: var(--surface-1);
 
+  & a {
+    color: var(--surface-1);
+  }
+
   & a:hover {
     color: var(--surface-2);
   }
@@ -69,6 +73,10 @@ html .banner:not(:first-of-type) {
       background-color: inherit;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
+    }
+
+    & a:hover {
+      color: var(--brand);
     }
   }
 }
