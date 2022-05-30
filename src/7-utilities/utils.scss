@@ -1,4 +1,3 @@
-/* purgecss start ignore */
 .hidden {
   display: none;
 }
@@ -19,10 +18,6 @@
     fill: var(--surface-1);
   }
 
-  & a:hover {
-    color: var(--surface-2);
-  }
-
   & a:hover svg {
     fill: var(--surface-2);
   }
@@ -37,6 +32,16 @@
 
   & :where(button, select) {
     border-color: var(--surface-1);
+  }
+
+  & .card[data-type="link"] {
+    &:hover {
+      color: var(--surface-2);
+    }
+
+    & a:hover {
+      color: inherit;
+    }
   }
 
   &:is(.content, .media) {
@@ -112,4 +117,3 @@ html .banner:not(:first-of-type) {
 :where(.cover) {
   object-fit: cover;
 }
-/* purgecss end ignore */
