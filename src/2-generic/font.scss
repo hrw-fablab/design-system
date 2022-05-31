@@ -36,3 +36,7 @@ h4 {
   font-family: "Inter var", sans-serif;
   font-variant-numeric: tabular-nums;
 }
+
+:where(label) {
+  font-size: var(--font-size-2);
+}
