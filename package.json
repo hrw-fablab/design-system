@@ -2,9 +2,17 @@
   "name": "design-system",
   "version": "1.0.0",
   "description": "HRW-Fablab Design System",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "css,scss"
+    }
+  },
   "scripts": {
-    "build": "postcss src/main.scss -o styles.css",
-    "watch": "postcss src/main.scss -o ../cms/design/css/styles.css --watch"
+    "watch": "npm-watch",
+    "build": "parcel-css --minify --nesting --targets \"last 1 Chrome major versions, last 2 Firefox major versions, last 2 Safari major versions , last 2 Edge major versions\" --bundle --custom-media src/main.css -o ../cms/design/css/styles.min.css"
   },
   "repository": {
     "type": "git",
@@ -17,11 +25,7 @@
   },
   "homepage": "https://github.com/hrw-fablab/design-system#readme",
   "devDependencies": {
-    "cssnano": "^5.1.9",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^9.1.0",
-    "postcss-custom-media": "^8.0.0",
-    "postcss-import": "^14.0.2",
-    "postcss-nesting": "^10.1.0"
+    "@parcel/css-cli": "^1.9.0",
+    "npm-watch": "^0.11.0"
   }
 }
