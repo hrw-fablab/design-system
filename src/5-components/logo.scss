@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: var(--size-fluid-1);
+  gap: var(--size-3);
   font-size: var(--font-size-4);
-  margin-inline-end: 2rem;
+  color: hsl(344, 88%, 41%);
+  margin-inline-end: var(--size-6);
 
   & img {
     width: auto;
@@ -22,7 +23,16 @@
     max-height: var(--size-fluid-4);
   }
 
+  @media (--xl-n-below) {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent; 
+  }
+
   @media (--lg-n-below) {
     margin-inline-end: inherit;
+    line-height: inherit; 
+    font-size: var(--font-size-4);
+    color: hsl(344, 88%, 41%);
   }
 }
