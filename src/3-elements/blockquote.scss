@@ -1,4 +1,7 @@
 :where(blockquote) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
   text-align: center;
   quotes: "“" "“" "“" "“";
   font-size: var(--font-size-5);
