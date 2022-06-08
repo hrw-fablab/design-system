@@ -21,6 +21,7 @@
   & :where(a, button) {
     text-decoration: underline 0.1em transparent;
     transition: text-decoration-color 250ms ease-in, fill 200ms ease-in;
+    border: none;
   }
 
   & :where(a, button):hover {
@@ -58,6 +59,10 @@
 
     & #menu-button {
       display: flex;
+    }
+
+    & button {
+      padding: inherit;
     }
 
     & form {

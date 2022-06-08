@@ -12,6 +12,8 @@
 body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
+  background-color: var(--surface-1);
+  color: var(--text-1);
 }
 
 main {
@@ -23,6 +25,11 @@ main {
   height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 0.7rem;
+  --shadow-color: 0deg 0% 20%;
+  filter: drop-shadow(0px 2px 8px hsl(var(--shadow-color) / 0.2))
+    drop-shadow(0px 0px 2px hsl(var(--shadow-color) / 0.2));
+  aspect-ratio: var(--aspect-widescreen);
 }
 
 :where(input, button, textarea, select) {
@@ -40,4 +47,24 @@ main {
 
 ul {
   list-style: none;
+}
+
+:where(a) {
+  color: var(--text-1);
+  text-decoration-thickness: 0.1em;
+  transition: color 200ms ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+a:hover svg {
+  fill: var(--brand);
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
 }

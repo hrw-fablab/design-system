@@ -1,10 +1,2 @@
-@import "button.scss";
-@import "svg.scss";
-@import "figure.scss";
-@import "details.scss";
 @import "form.scss";
-@import "blockquote.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "article.scss";
-@import "time.scss";
+@import "elements.scss";
