@@ -1,23 +1,20 @@
 .banner {
   display: grid;
   grid-template: "container";
-  place-items: center center;
   color: var(--surface-1);
-  height: 25rem;
+  height: 40vh;
 
   & img {
-    height: 25rem;
+    max-height: 40vh;
+    border-radius: inherit;
   }
 
   & > * {
     grid-area: container;
   }
 
-  & :where(img) {
-    border-radius: 0;
-  }
-
-  & > :first-child {
+  & > div {
+    place-self: center;
     z-index: 1;
     padding: var(--size-fluid-4);
     display: flex;
@@ -26,13 +23,17 @@
     justify-content: center;
   }
 
+  &:where([data-style="accent"]) {
+    max-height: 40vh;
+  }
+
   @media (--md-n-below) {
     & {
-      height: 15rem;
+      max-height: 25vh;
     }
 
     & img {
-      height: 15rem;
+      max-height: 25vh;
     }
 
     & > div {
@@ -40,6 +41,7 @@
       height: 100%;
       padding-inline: 1.2rem;
       border-radius: inherit;
+      text-align: center;
     }
   }
 }
