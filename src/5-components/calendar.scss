@@ -1,3 +1,10 @@
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 .calendar {
   & :where(ol) {
     display: grid;
@@ -7,6 +14,14 @@
 
   & li {
     position: relative;
+  }
+
+  & button {
+    border: none;
+  }
+
+  & button:hover {
+    fill: var(--brand);
   }
 
   & > header {
@@ -43,25 +58,24 @@
   }
 }
 
-.events {
+.calendar .events {
   border-inline-start: solid 0.15rem var(--surface-2);
   counter-reset: section;
 
   & li {
-    align-items: end;
-    aspect-ratio: 5 / 3;
     border-block-end: solid 0.15rem var(--surface-2);
     border-inline-end: solid 0.15rem var(--surface-2);
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--size-3);
     justify-content: end;
+    min-width: 0;
+    aspect-ratio: 5 / 3;
   }
 
-  @media (--xl-n-below) {
-    & li {
-      aspect-ratio: 5 / 4;
-    }
+  & .today {
+    background-color: rgb(240 240 240);
+    color: var(--brand);
   }
 
   @media (--lg-n-below) {
@@ -69,126 +83,141 @@
       border: none;
     }
 
-    & li:where(.deactive, :not(.elements)) {
-      display: none !important;
+    & li {
+      aspect-ratio: inherit;
+      border: none;
+      gap: var(--size-fluid-4);
     }
 
-    & li {
-      border: none;
-      aspect-ratio: inherit;
+    & button {
+      display: none;
+    }
+
+    & li:where(:not(.full)) {
+      display: none;
     }
   }
 }
 
-.cl-details {
-  border-radius: 0;
-  border: 0;
-  padding: 0;
-  width: 100%;
-  background-color: var(--surface-1);
-  box-shadow: var(--shadow);
+.events details {
+  margin-inline-end: 0.5rem;
+  border-radius: 0 0.7rem 0.7rem 0;
+
+  &:where([data-position="first"]) {
+    margin-inline-end: inherit;
+    border-radius: inherit;
+  }
 
   & summary {
-    border-inline-start: solid var(--brand) 0.3rem;
-    display: grid;
     font-size: var(--font-size-2);
     font-weight: normal;
     line-height: 1.5;
-    padding-inline: 0.2rem;
-  }
-
-  & .day {
-    text-align: center;
-    align-items: center;
-    border-radius: 0.7rem 0 0 0.7rem;
-    color: var(--surface-1);
-    display: none;
-    font-weight: bold;
-    height: 100%;
-    width: 5rem;
-    flex-direction: column;
-    word-spacing: 100vw;
-    justify-content: center;
-  }
-
-  & .info {
-    display: flex;
-    gap: var(--size-1);
-  }
-
-  & .cl-info {
-    display: flex;
-    flex-direction: column;
+    padding-inline: 0.4rem;
+    padding-block: 0.2rem;
+    user-select: none;
+    max-width: 100%;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
-  & .info :first-child::after {
-    content: "-";
-    padding-inline-start: var(--size-1);
-  }
-
-  & time {
-    gap: 0;
-  }
-
-  &[open] .detail {
-    background-color: var(--surface-1);
-    box-shadow: var(--shadow);
-    border-inline-start: solid var(--brand) 0.3rem;
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-3);
-    padding: var(--size-2);
-    padding-block: var(--size-3);
-    position: absolute;
-    width: 20rem;
-    z-index: 2;
+  & .date {
+    display: none;
   }
 
   @media (--lg-n-below) {
     & {
-      box-shadow: inherit;
+      border-radius: 0.7rem;
+      box-shadow: var(--shadow);
+    }
+
+    & .date {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      border-radius: 0.7rem 0 0 0.7rem;
+      color: var(--surface-1);
+      font-weight: bold;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--color);
+      padding: var(--size-fluid-4);
     }
 
     & summary {
-      background-color: var(--surface-1);
-      border-radius: 0.7rem;
-      border: none;
-      box-shadow: var(--shadow);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: var(--size-fluid-4);
       font-size: var(--font-size-3);
-      grid-template-columns: auto 1fr;
-      min-height: 6rem;
-      padding: inherit;
-    }
-
-    & .cl-info {
-      gap: var(--size-1);
-      padding: var(--size-fluid-2);
-    }
-
-    &[open] .detail {
       background-color: var(--surface-1);
-      border-radius: 0 0 0.7rem 0.7rem;
-      border: 0;
-      box-shadow: var(--shadow);
-      padding: var(--size-fluid-1);
-      position: relative;
-      width: 100%;
+      color: var(--text-1);
+      border-radius: 0.7rem;
     }
 
-    &[open] .day {
+    &[open] .date {
       border-radius: 0.7rem 0 0 0;
     }
 
     &[open] summary {
       border-radius: 0 0.7rem 0 0;
     }
+  }
+}
 
-    & .day {
-      display: flex;
+.events button {
+  font-size: var(--font-size-2);
+  font-weight: normal;
+  line-height: 1.5;
+  padding-inline: 0.4rem;
+  padding-block: 0.2rem;
+  border-radius: inherit;
+  transform: scaleX(102%);
+
+  &[data-position="last"] {
+    margin-inline-end: 0.5rem;
+    transform: inherit;
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  & span {
+    visibility: hidden;
+  }
+}
+
+.events .description {
+  background-color: var(--surface-1);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  padding: var(--size-4);
+  position: absolute;
+  width: 30rem;
+  z-index: 2;
+  border-radius: 0.7rem;
+  transform: translateY(5%);
+  color: var(--text-1);
+
+  & header {
+    padding: 0;
+  }
+
+  & header div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & button {
+    background-color: inherit;
+  }
+
+  @media (--lg-n-below) {
+    & {
+      position: relative;
+      width: 100%;
+      transform: inherit;
+      border-radius: 0 0 0.7rem 0.7rem;
     }
   }
 }
@@ -222,40 +251,32 @@
   }
 }
 
-.cl-details:hover summary {
-  background-color: var(--surface-2);
-}
-
-.cl-details {
+.calendar .events details,
+.calendar .events li > button {
   --color: var(--brand);
-  & summary {
-    border-color: var(--color);
-  }
+  background-color: var(--color);
+  color: var(--surface-1);
 
-  &[open] .detail {
-    border-color: var(--color);
-  }
-
-  & .day {
+  & .date {
     background-color: var(--color);
-  }
-
-  & .info {
-    color: var(--color);
   }
 
   &[data-type="teach"] {
     --color: #9775fa;
   }
+
   &[data-type="open"] {
     --color: #4dabf7;
   }
+
   &[data-type="student"] {
     --color: #ffd43b;
   }
+
   &[data-type="workshop"] {
     --color: #f76707;
   }
+
   &[data-type="external"] {
     --color: #94d82d;
   }

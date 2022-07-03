@@ -96,3 +96,7 @@
   flex-wrap: wrap;
   gap: var(--size-fluid-1);
 }
+
+:where(summary) {
+  cursor: pointer;
+}
