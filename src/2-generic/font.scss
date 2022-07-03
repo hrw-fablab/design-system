@@ -32,8 +32,8 @@
 
 :where(input, button, textarea, select) {
   line-height: 1.7;
-  font-size: var(--font-size-3);
-  font-family: "Inter var", sans-serif;
+  font-size: inherit;
+  font-family: inherit;
   font-variant-numeric: tabular-nums;
 }
 
