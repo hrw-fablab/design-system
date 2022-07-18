@@ -73,11 +73,6 @@ details > summary::-webkit-details-marker {
     aspect-ratio: 5 / 3;
   }
 
-  & .today {
-    background-color: rgb(240 240 240);
-    color: var(--brand);
-  }
-
   @media (--lg-n-below) {
     & {
       border: none;
@@ -240,18 +235,47 @@ details > summary::-webkit-details-marker {
   }
 }
 
-.cl-details {
-  &[data-repeat="repeat"] {
-    & summary {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='darkgray' %3E%3Cpath d='M2 12a4 4 0 0 0 1 2.6l-1.1.7-.6.4A6 6 0 0 1 6 6h9V3l6 4-6 4V8H6a4 4 0 0 0-4 4zm20.7-3.7-.6.4-1 .7A4 4 0 0 1 22 12a4 4 0 0 1-4 4H9v-3l-6 4 6 4v-3h9a6 6 0 0 0 4.7-9.7z'/%3E%3C/svg%3E");
-      background-position: calc(100% - 0.75rem) center;
-      background-repeat: no-repeat;
-      padding-right: var(--size-5);
-    }
+.calendar[data-style="scroll"] {
+  & .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: var(--size-fluid-3);
+    border: none;
+  }
+
+  & .events section > :where(header, div) {
+    padding-inline: var(--size-fluid-1);
+  }
+
+  & .events section > time {
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    font-size: var(--font-size-4);
+    color: var(--surface-1);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem 0.7rem 0 0;
+  }
+
+  & .events section {
+    font-size: var(--font-size-3);
+    border-radius: 0.7rem;
+    box-shadow: var(--shadow);
+    padding-block-end: var(--size-fluid-1);
+  }
+
+  & .events header {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
 .calendar .events details,
+.calendar .events > section > time,
 .calendar .events li > button {
   --color: var(--brand);
   background-color: var(--color);
@@ -262,22 +286,22 @@ details > summary::-webkit-details-marker {
   }
 
   &[data-type="teach"] {
-    --color: #9775fa;
+    --color: hsl(255, 93%, 72%);
   }
 
   &[data-type="open"] {
-    --color: #4dabf7;
+    --color: hsl(207, 91%, 55%);
   }
 
   &[data-type="student"] {
-    --color: #ffd43b;
+    --color: hsl(47, 100%, 62%);
   }
 
   &[data-type="workshop"] {
-    --color: #f76707;
+    --color: hsl(24, 94%, 50%);
   }
 
   &[data-type="external"] {
-    --color: #94d82d;
+    --color: hsl(84, 69%, 51%);
   }
 }
