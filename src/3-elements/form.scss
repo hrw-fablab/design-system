@@ -3,9 +3,13 @@ form {
   flex-direction: column;
   gap: var(--size-fluid-1);
 
-  & p {
+  & div {
     display: flex;
     flex-direction: column;
+  }
+
+  & .captcha {
+    display: inline;
   }
 }
 

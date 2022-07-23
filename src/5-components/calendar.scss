@@ -254,6 +254,7 @@ details > summary::-webkit-details-marker {
     color: var(--surface-1);
     font-weight: bold;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 0.7rem 0.7rem 0 0;
@@ -271,6 +272,13 @@ details > summary::-webkit-details-marker {
     align-items: start;
     justify-content: center;
     flex-direction: column;
+  }
+
+  @media (--lg-n-below) {
+    & .events section time {
+      font-size: var(--font-size-3);
+      aspect-ratio: 6 / 1;
+    }
   }
 }
 
